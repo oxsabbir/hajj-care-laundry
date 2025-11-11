@@ -1,6 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Star, Phone } from "lucide-react";
+import {
+  Star,
+  Phone,
+  MessageCircleMore,
+  Zap,
+  Clock,
+  Quote,
+  CircleDollarSign,
+} from "lucide-react";
 import heroImage from "@/assets/hero-laundry.webp";
 
 const HeroNew = () => {
@@ -26,21 +34,8 @@ const HeroNew = () => {
       <div className="relative container mx-auto px-3 py-6 sm:py-16">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center rounded-full border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 mb-4 sm:mb-6 bg-red-500 text-white text-xs sm:text-base px-3 sm:px-4 py-2 animate-pulse">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="lucide lucide-zap w-3 h-3 sm:w-5 sm:h-5 mr-1 sm:mr-2"
-            >
-              <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-            </svg>
-            🚨 URGENT LAUNDRY? 15-MIN PICKUP GUARANTEED!
+            <Zap size={20} className="mr-1" />
+            URGENT LAUNDRY? 15-MIN PICKUP GUARANTEED!
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-accent">
@@ -166,26 +161,24 @@ const HeroNew = () => {
               href="https://wa.me/+966539529624?text=Hi! I need laundry service in Makkah. Please send pickup details."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[#25D366] text-white hover:bg-[#128C7E] hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-orange-600 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="lucide lucide-message-circle w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3"
-              >
-                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
-              </svg>
-              📱 WhatsApp NOW - 15 Min Pickup!
+              <MessageCircleMore size={24} />
+              WhatsApp NOW - 15 Min Pickup!
             </a>
-            <div className="text-primary-foreground/90 text-xs sm:text-base">
-              ⏰ 24/7 Service | 🆓 Free Quotes | 💯 Money-Back Guarantee
+            <div className="text-primary-foreground/90 flex items-center justify-center gap-4 text-xs sm:text-base">
+              <span className="flex items-center gap-2">
+                <Clock size={18} /> 24/7 Service
+              </span>
+              <span>|</span>
+              <span className="flex items-center gap-2">
+                <Quote size={18} /> Free Quotes
+              </span>
+              <span>|</span>
+              <span className="flex items-center gap-2">
+                <CircleDollarSign size={18} />
+                Money-Back Guarantee
+              </span>
             </div>
           </div>
         </div>

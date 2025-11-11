@@ -1,4 +1,43 @@
+import { Check, CheckCircle } from "lucide-react";
 import { Button } from "./ui/button";
+
+const pricePlan = {
+  basic: {
+    title: "Basic",
+    price: 13,
+    feature: [
+      "Regular clothes wash & dry",
+      "FREE pickup & delivery",
+      "Same day service",
+      "Basic pressing included",
+      "24/7 availability",
+    ],
+  },
+  premium: {
+    title: "Premium",
+    price: 18,
+    feature: [
+      "Everything in Basic",
+      "Professional pressing",
+      "Stain removal treatment",
+      "Fabric conditioner",
+      "Plastic packaging",
+      "3-hour express option",
+    ],
+  },
+  vip: {
+    title: "VIP",
+    price: 25,
+    feature: [
+      "Everything in Premium",
+      "Premium detergents",
+      "Hand-finished pressing",
+      "1-hour emergency service",
+      "Special garment care",
+      "Delivery scheduling",
+    ],
+  },
+};
 
 export default function PricingSection() {
   return (
@@ -17,35 +56,29 @@ export default function PricingSection() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 relative hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/20">
+          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 relative  hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/80">
             <div className="text-center">
               <h3 className="text-xl sm:text-2xl font-bold mb-2 text-foreground">
-                Basic
+                {pricePlan.basic.title}
               </h3>
               <div className="mb-4">
                 <span className="text-3xl sm:text-4xl font-bold text-primary">
-                  13 SAR
+                  {pricePlan.basic.price} SAR
                 </span>
                 <span className="text-sm text-muted-foreground ml-1">
                   per kg
                 </span>
               </div>
-              <ul className="space-y-2 mb-6 text-left">
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Regular clothes wash &amp; dry
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ FREE pickup &amp; delivery
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Same day service
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Basic pressing included
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ 24/7 availability
-                </li>
+              <ul className="space-y-2 mb-6 text-left ">
+                {pricePlan.basic.feature.map((feature, i) => (
+                  <li
+                    key={i}
+                    className="text-sm flex items-center gap-2 py-1 sm:text-base text-muted-foreground"
+                  >
+                    <CheckCircle className="text-primary" size={18} />
+                    {feature}
+                  </li>
+                ))}
               </ul>
               <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
                 Choose Basic
@@ -58,72 +91,54 @@ export default function PricingSection() {
             </div>
             <div className="text-center">
               <h3 className="text-xl sm:text-2xl font-bold mb-2 text-foreground">
-                Premium
+                {pricePlan.premium.title}
               </h3>
               <div className="mb-4">
                 <span className="text-3xl sm:text-4xl font-bold text-primary">
-                  18 SAR
+                  {pricePlan.premium.price} SAR
                 </span>
                 <span className="text-sm text-muted-foreground ml-1">
                   per kg
                 </span>
               </div>
               <ul className="space-y-2 mb-6 text-left">
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Everything in Basic
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Professional pressing
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Stain removal treatment
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Fabric conditioner
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Plastic packaging
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ 3-hour express option
-                </li>
+                {pricePlan.premium.feature.map((feature, i) => (
+                  <li
+                    key={i}
+                    className="text-sm flex items-center gap-2 py-1 sm:text-base text-muted-foreground"
+                  >
+                    <CheckCircle className="text-primary" size={18} />
+                    {feature}
+                  </li>
+                ))}
               </ul>
 
               <Button className=" bg-primary">Choose Premium</Button>
             </div>
           </div>
-          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 relative hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/20">
+          <div className="rounded-lg bg-card text-card-foreground shadow-sm p-4 sm:p-6 relative hover:shadow-xl transition-all hover:-translate-y-1 border border-primary/80">
             <div className="text-center">
               <h3 className="text-xl sm:text-2xl font-bold mb-2 text-foreground">
-                VIP
+                {pricePlan.vip.title}
               </h3>
               <div className="mb-4">
                 <span className="text-3xl sm:text-4xl font-bold text-primary">
-                  25 SAR
+                  {pricePlan.vip.price} SAR
                 </span>
                 <span className="text-sm text-muted-foreground ml-1">
                   per kg
                 </span>
               </div>
               <ul className="space-y-2 mb-6 text-left">
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Everything in Premium
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Premium detergents
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Hand-finished pressing
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ 1-hour emergency service
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Special garment care
-                </li>
-                <li className="text-sm sm:text-base text-muted-foreground">
-                  ✅ Delivery scheduling
-                </li>
+                {pricePlan.vip.feature.map((feature, i) => (
+                  <li
+                    key={i}
+                    className="text-sm flex items-center gap-2 py-1 sm:text-base text-muted-foreground"
+                  >
+                    <CheckCircle className="text-primary" size={18} />
+                    {feature}
+                  </li>
+                ))}
               </ul>
               <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
                 Choose VIP

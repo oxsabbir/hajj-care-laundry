@@ -16,7 +16,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
@@ -38,8 +38,10 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent("Hi, I'd like to book a laundry service.");
-    window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+    const message = encodeURIComponent(
+      "Hi, I'd like to book a laundry service."
+    );
+    window.open(`https://wa.me/1234567890?text=${message}`, "_blank");
   };
 
   return (
@@ -69,24 +71,30 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-foreground">Phone</p>
-                      <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
+                      <a
+                        href="tel:+1234567890"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
                         +1 (234) 567-890
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <p className="font-semibold text-foreground">Email</p>
-                      <a href="mailto:info@makkahlaundrycare.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      <a
+                        href="mailto:info@makkahlaundrycare.com"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
                         info@makkahlaundrycare.com
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                       <MapPin className="w-6 h-6 text-primary" />
@@ -94,22 +102,14 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-foreground">Address</p>
                       <p className="text-muted-foreground">
-                        123 Main Street<br />
+                        123 Main Street
+                        <br />
                         Makkah, Saudi Arabia
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <Button 
-                onClick={handleWhatsApp}
-                className="w-full md:w-auto"
-                size="lg"
-              >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Chat on WhatsApp
-              </Button>
 
               {/* Google Map */}
               <div className="rounded-xl overflow-hidden shadow-lg h-64">
@@ -131,54 +131,74 @@ const Contact = () => {
           <div className="animate-slide-up animate-delay-200">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2 text-foreground"
+                >
                   Full Name *
                 </label>
                 <Input
                   id="name"
                   type="text"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                   placeholder="Your name"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2 text-foreground"
+                >
                   Email Address *
                 </label>
                 <Input
                   id="email"
                   type="email"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                   placeholder="your@email.com"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-2 text-foreground">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium mb-2 text-foreground"
+                >
                   Phone Number
                 </label>
                 <Input
                   id="phone"
                   type="tel"
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, phone: e.target.value })
+                  }
                   placeholder="+1 (234) 567-890"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2 text-foreground"
+                >
                   Message *
                 </label>
                 <Textarea
                   id="message"
                   value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
                   placeholder="Tell us about your laundry needs..."
                   rows={5}
                   required

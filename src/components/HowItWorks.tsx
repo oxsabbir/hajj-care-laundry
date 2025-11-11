@@ -1,11 +1,14 @@
 import { MessageCircle, Truck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import phone from "@/assets/phone.webp";
+import delivery from "@/assets/delivery.webp";
+import pickup from "@/assets/pickup.webp";
 
 const steps = [
   {
     number: "1",
     icon: MessageCircle,
-    emoji: "📱",
+    image: phone,
     title: "WhatsApp Us",
     description:
       "Send a message with your location. We'll confirm pickup time (usually 15 minutes).",
@@ -14,7 +17,7 @@ const steps = [
   {
     number: "2",
     icon: Truck,
-    emoji: "🚚",
+    image: pickup,
     title: "We Pickup & Clean",
     description:
       "Our professional team collects your clothes and processes them with care.",
@@ -23,7 +26,7 @@ const steps = [
   {
     number: "3",
     icon: Sparkles,
-    emoji: "✨",
+    image: delivery,
     title: "Fresh Delivery",
     description:
       "Your clothes return clean, pressed, and ready to wear. Pay on delivery.",
@@ -76,7 +79,15 @@ const HowItWorks = () => {
                   </div>
 
                   <div className="text-center mt-4">
-                    <div className="text-6xl mb-4">{step.emoji}</div>
+                    <img alt="" />
+                    <div className="text-6xl mb-4">
+                      <img
+                        src={step.image}
+                        width={350}
+                        height={180}
+                        className="object-cover w-full h-[180px]"
+                      />
+                    </div>
                     <h3 className="text-2xl font-bold text-foreground mb-3">
                       {step.title}
                     </h3>
@@ -94,9 +105,9 @@ const HowItWorks = () => {
         </div>
 
         {/* Guarantee Box */}
-        <div className="bg-primary text-white rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-xl">
+        <div className="bg-gradient-to-br from-gray-900 via-indigo-500 to-gray-900 text-white rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-xl">
           <h3 className="text-3xl font-bold mb-4">
-            🎯 Try Our Service Risk-Free!
+            Try Our Service Risk-Free!
           </h3>
           <p className="text-xl mb-6 opacity-95">
             Not satisfied? We'll redo your laundry for FREE or refund 100% of
