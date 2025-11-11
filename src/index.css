@@ -9,40 +9,45 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 13% 18%;
+    --foreground: 160 45% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
+    --card-foreground: 160 45% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
+    --popover-foreground: 160 45% 20%;
 
-    --primary: 206 100% 50%;
+    --primary: 160 65% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 206 50% 96%;
-    --secondary-foreground: 206 100% 35%;
+    --secondary: 160 35% 35%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 220 13% 45%;
+    --muted: 160 10% 95%;
+    --muted-foreground: 160 20% 40%;
 
-    --accent: 206 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 45 100% 55%;
+    --accent-foreground: 160 45% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
+    
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --urgent: 0 100% 65%;
+    --urgent-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 206 100% 50%;
+    --border: 160 15% 85%;
+    --input: 160 15% 92%;
+    --ring: 160 65% 45%;
 
     --radius: 0.75rem;
     
-    /* Custom design tokens */
-    --hero-gradient-start: 206 100% 97%;
-    --hero-gradient-end: 206 50% 98%;
-    --shadow-soft: 0 4px 20px -2px hsl(206 100% 50% / 0.1);
-    --shadow-medium: 0 8px 30px -4px hsl(206 100% 50% / 0.15);
+    /* Hero gradient - green teal theme */
+    --hero-gradient: linear-gradient(135deg, hsl(160 50% 35%) 0%, hsl(165 45% 40%) 100%);
+    --shadow-soft: 0 4px 20px -2px hsl(160 65% 45% / 0.15);
+    --shadow-glow: 0 0 40px hsl(160 65% 45% / 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
