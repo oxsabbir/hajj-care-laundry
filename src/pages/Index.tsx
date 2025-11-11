@@ -8,6 +8,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import PickupManager from "@/components/PickupManager";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <WhyChoose />
       <PricingGrid />
       <HowItWorks />
+      <PickupManager />
       <Testimonials />
       <Contact />
       <Footer />
