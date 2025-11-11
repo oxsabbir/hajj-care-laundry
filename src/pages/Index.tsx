@@ -5,6 +5,7 @@ import Comparison from "@/components/Comparison";
 import WhyChoose from "@/components/WhyChoose";
 import PricingGrid from "@/components/PricingGrid";
 import HowItWorks from "@/components/HowItWorks";
+import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -18,6 +19,7 @@ const Index = () => {
       <WhyChoose />
       <PricingGrid />
       <HowItWorks />
+      <Testimonials />
       <Contact />
       <Footer />
     </main>
