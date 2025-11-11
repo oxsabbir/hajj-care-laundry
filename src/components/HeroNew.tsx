@@ -24,7 +24,7 @@ const HeroNew = () => {
     <section className="relative overflow-hidden bg-black/80 min-h-screen flex items-center">
       <img
         src={heroImage}
-        alt="Professional makkahlaundryservice - Express laundry pickup and delivery in Makkah for pilgrims"
+        alt="Professional clock tower laundry service  - Express laundry pickup and delivery in Makkah for pilgrims"
         className="absolute inset-0 w-full h-full object-cover opacity-25"
         loading="eager"
         fetchPriority="high"

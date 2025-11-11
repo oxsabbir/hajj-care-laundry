@@ -72,30 +72,31 @@ const HowItWorks = () => {
                   <div className="hidden md:block absolute top-24 left-[60%] w-[80%] h-0.5 bg-primary/30 z-0" />
                 )}
 
-                <div className="relative z-10 bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-primary/20 hover:border-primary">
-                  {/* Step Number */}
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
-                    {step.number}
-                  </div>
-
-                  <div className="text-center mt-4">
-                    <img alt="" />
-                    <div className="text-6xl mb-4">
+                <div className="relative z-10 bg-card rounded-2xl pb-8 shadow-lg hover:shadow-xl transition-all border-2 border-primary/20 hover:border-primary">
+                  <div>
+                    <div className=" relative">
                       <img
                         src={step.image}
                         width={350}
                         height={180}
-                        className="object-cover w-full h-[180px]"
+                        className="object-cover w-full h-[200px] rounded-t-xl"
                       />
+                      <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-primary font-bold text-lg text-white rounded-full flex items-center  justify-center">
+                        {step.number}
+                      </div>
                     </div>
-                    <h3 className="text-2xl font-bold text-foreground mb-3">
-                      {step.title}
-                    </h3>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">
-                      {step.description}
-                    </p>
-                    <div className="inline-flex items-center gap-2 bg-success/10 text-success px-4 py-2 rounded-full font-semibold">
-                      ⚡ {step.time}
+                  </div>
+                  <div className=" px-4 pt-5">
+                    <div className="text-center mt-4 relative flex items-center flex-col">
+                      <h3 className="text-2xl font-bold text-foreground mb-3">
+                        {step.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-4 leading-relaxed">
+                        {step.description}
+                      </p>
+                      <div className="inline-flex items-center gap-2 bg-success/10 text-success px-4 py-2 rounded-full font-semibold">
+                        ⚡ {step.time}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -106,10 +107,10 @@ const HowItWorks = () => {
 
         {/* Guarantee Box */}
         <div className="bg-gradient-to-br from-gray-900 via-indigo-500 to-gray-900 text-white rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-xl">
-          <h3 className="text-3xl font-bold mb-4">
+          <h3 className=" text-2xl md:text-3xl font-bold mb-4">
             Try Our Service Risk-Free!
           </h3>
-          <p className="text-xl mb-6 opacity-95">
+          <p className="md:text-xl text-lg mb-6 opacity-95">
             Not satisfied? We'll redo your laundry for FREE or refund 100% of
             your money.
             <br />
@@ -118,7 +119,7 @@ const HowItWorks = () => {
           <Button
             size="lg"
             onClick={handleStart}
-            className="bg-success hover:bg-success/90 text-white text-lg px-8 py-6"
+            className="bg-success hover:bg-success/90 text-white md:text-lg px-4 py-3 text-base md:px-8 md:py-6"
           >
             Start Your First Order - FREE Pickup
           </Button>

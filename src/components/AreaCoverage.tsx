@@ -68,7 +68,7 @@ const AreaCoverage = () => {
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
             No matter where you're staying in Makkah - our{" "}
-            <strong>makkahlaundryservice</strong> comes to YOU!
+            <strong>Clock tower laundy service</strong> comes to YOU!
             <span className="text-primary font-semibold">
               {" "}
               Our express pickup service covers every hotel, apartment, and area
