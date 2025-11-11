@@ -1,5 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
+import { Input } from "./ui/input";
 
 const areas = [
   {
@@ -110,23 +112,40 @@ const AreaCoverage = () => {
         </div>
 
         {/* CTA Box */}
-        <div className="bg-primary text-white rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-xl">
-          <h3 className="text-3xl font-bold mb-4">
-            📍 Not Sure About Your Area? Get Instant Confirmation!
+        <div className="bg-gradient-to-r from-purple-400 to-indigo-500 text-white rounded-2xl p-6 md:p-10 text-center max-w-4xl mx-auto shadow-xl">
+          <h3 className=" text-xl md:text-3xl font-bold  ">
+            Not Sure About Your Area?
           </h3>
+          <p className=" text-lg mt-1.5 text-slate-100">
+            Get Instant Confirmation!
+          </p>
+          <div className="max-w-xl mx-auto mt-5">
+            <Input
+              type="text"
+              placeholder="Enter your hotel/location"
+              className="p-5 text-lg font-medium text-black"
+            />
+          </div>
+
           <Button
             size="lg"
             onClick={handleCheckArea}
-            className="bg-success hover:bg-success/90 text-white text-lg px-8 py-6 mt-4"
+            className=" bg-green-500 text-white text-lg px-8 py-6 mt-4"
           >
-            📱 Check My Pickup Time - FREE
+            Check My Pickup Time - FREE
           </Button>
           <div className="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm">
-            <span>✅ Instant response</span>
+            <span className="flex items-center gap-1.5">
+              <Check size={20} /> <span>Instant response</span>
+            </span>
             <span>|</span>
-            <span>✅ No commitment needed</span>
+            <span className="flex items-center gap-1.5">
+              <Check size={20} /> No commitment needed
+            </span>
             <span>|</span>
-            <span>✅ Available 24/7</span>
+            <span className="flex items-center gap-1.5">
+              <Check size={20} /> Available 24/7
+            </span>
           </div>
         </div>
       </div>

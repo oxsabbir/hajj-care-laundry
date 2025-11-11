@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import PickupManager from "@/components/PickupManager";
 import UrgentService from "@/components/UrgentService";
 import PricingSection from "@/components/PricingSection";
+import FinalCTO from "@/components/FinalCTO";
 
 const Index = () => {
   return (
@@ -22,8 +23,10 @@ const Index = () => {
       <PricingGrid />
       <HowItWorks />
       <PricingSection />
-      <PickupManager />
+
       <Testimonials />
+      <FinalCTO />
+      <PickupManager />
       <Contact />
       <Footer />
     </main>

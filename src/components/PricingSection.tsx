@@ -131,8 +131,8 @@ export default function PricingSection() {
             </div>
           </div>
         </div>
-        <div className="text-center mt-8 sm:mt-12">
-          <div className="rounded-lg border text-card-foreground shadow-sm max-w-2xl mx-auto bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800">
+        {/* <div className="text-center mt-8 sm:mt-12">
+          <div className="rounded-lg border text-card-foreground shadow-sm max-w-2xl mx-auto bg-gradient-to-tr from-slate-300 via-zinc-200 to-gray-300">
             <div className="p-4 sm:p-6">
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-red-700 dark:text-red-300">
                 💸 Hotel Laundry vs Our Service
@@ -163,7 +163,7 @@ export default function PricingSection() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

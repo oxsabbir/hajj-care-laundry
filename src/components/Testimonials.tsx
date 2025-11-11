@@ -16,7 +16,8 @@ const testimonials = [
     location: "Clock Tower Hotel, Makkah",
     country: "Saudi Arabia",
     rating: 5,
-    review: "Perfect for pilgrims! Clean clothes in just 15 minutes. Exactly what we needed in Makkah! The team was professional and the service was incredibly fast. Highly recommended!",
+    review:
+      "Perfect for pilgrims! Clean clothes in just 15 minutes. Exactly what we needed in Makkah! The team was professional and the service was incredibly fast. Highly recommended!",
     avatar: "AR",
     flag: "🇸🇦",
   },
@@ -25,7 +26,8 @@ const testimonials = [
     location: "Hilton Makkah",
     country: "Egypt",
     rating: 5,
-    review: "Amazing service! They picked up my laundry within 10 minutes and returned everything perfectly clean and pressed. The prices are much better than hotel laundry. Will use again!",
+    review:
+      "Amazing service! They picked up my laundry within 10 minutes and returned everything perfectly clean and pressed. The prices are much better than hotel laundry. Will use again!",
     avatar: "FH",
     flag: "🇪🇬",
   },
@@ -34,7 +36,8 @@ const testimonials = [
     location: "Jabal Omar Towers",
     country: "Pakistan",
     rating: 5,
-    review: "Best laundry service in Makkah! They understand pilgrims' needs and work around prayer times. My Ihram clothes were treated with care and returned spotless. 5 stars!",
+    review:
+      "Best laundry service in Makkah! They understand pilgrims' needs and work around prayer times. My Ihram clothes were treated with care and returned spotless. 5 stars!",
     avatar: "MK",
     flag: "🇵🇰",
   },
@@ -43,7 +46,8 @@ const testimonials = [
     location: "Swissotel Makkah",
     country: "UAE",
     rating: 5,
-    review: "Exceptional service! Available 24/7 and they speak English perfectly. I needed emergency laundry at 2 AM and they delivered. Saved my trip! Thank you so much.",
+    review:
+      "Exceptional service! Available 24/7 and they speak English perfectly. I needed emergency laundry at 2 AM and they delivered. Saved my trip! Thank you so much.",
     avatar: "AA",
     flag: "🇦🇪",
   },
@@ -52,7 +56,8 @@ const testimonials = [
     location: "Aziziyah District",
     country: "Indonesia",
     rating: 5,
-    review: "Very reliable and affordable! Half the price of hotel laundry with better quality. The WhatsApp booking is so convenient. I recommend this to all pilgrims!",
+    review:
+      "Very reliable and affordable! Half the price of hotel laundry with better quality. The WhatsApp booking is so convenient. I recommend this to all pilgrims!",
     avatar: "IY",
     flag: "🇮🇩",
   },
@@ -61,7 +66,8 @@ const testimonials = [
     location: "Al Safwah Towers",
     country: "Malaysia",
     rating: 5,
-    review: "Outstanding experience! They handled my delicate abayas with great care. Fast pickup, professional service, and reasonable prices. This is the only laundry service you need in Makkah!",
+    review:
+      "Outstanding experience! They handled my delicate abayas with great care. Fast pickup, professional service, and reasonable prices. This is the only laundry service you need in Makkah!",
     avatar: "MA",
     flag: "🇲🇾",
   },
@@ -70,7 +76,8 @@ const testimonials = [
     location: "Kudai Area",
     country: "Turkey",
     rating: 5,
-    review: "Quick, efficient and trustworthy! They tracked everything and sent updates on WhatsApp. My clothes came back fresher than new. Excellent service for the price!",
+    review:
+      "Quick, efficient and trustworthy! They tracked everything and sent updates on WhatsApp. My clothes came back fresher than new. Excellent service for the price!",
     avatar: "HM",
     flag: "🇹🇷",
   },
@@ -79,21 +86,19 @@ const testimonials = [
     location: "Misfalah District",
     country: "Bangladesh",
     rating: 5,
-    review: "Finally found a reliable laundry service in Makkah! They speak Urdu which made communication easy. Same day service as promised and my formal wear was perfectly pressed!",
+    review:
+      "Finally found a reliable laundry service in Makkah! They speak Urdu which made communication easy. Same day service as promised and my formal wear was perfectly pressed!",
     avatar: "KR",
     flag: "🇧🇩",
   },
 ];
 
 const Testimonials = () => {
-  const plugin = useRef(
-    // @ts-ignore - Autoplay plugin will be loaded dynamically
-    null
-  );
+  const plugin = useRef(null);
 
   useEffect(() => {
     import("embla-carousel-autoplay").then((AutoplayPlugin) => {
-      plugin.current = AutoplayPlugin.default({ delay: 5000 });
+      plugin.current = AutoplayPlugin.default({ delay: 3000 });
     });
   }, []);
 
@@ -101,8 +106,8 @@ const Testimonials = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            ⭐ What Our Customers Say
+          <h2 className="text-4xl md:text-4xl font-bold mb-4 text-foreground">
+            What Our Customers Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             5000+ happy customers from 50+ countries trust us with their laundry
@@ -168,7 +173,9 @@ const Testimonials = () => {
                           <div className="flex-1 min-w-0">
                             <div className="font-semibold text-foreground flex items-center gap-2">
                               {testimonial.name}
-                              <span className="text-xl">{testimonial.flag}</span>
+                              <span className="text-xl">
+                                {testimonial.flag}
+                              </span>
                             </div>
                             <div className="text-sm text-muted-foreground">
                               {testimonial.location}
@@ -192,12 +199,18 @@ const Testimonials = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-xl text-foreground font-semibold mb-4">
-            Join thousands of satisfied customers who trust us with their laundry!
+            Join thousands of satisfied customers who trust us with their
+            laundry!
           </p>
           <button
             onClick={() => {
-              const message = encodeURIComponent("Hi! I want to book your 5-star laundry service.");
-              window.open(`https://wa.me/+966539529624?text=${message}`, '_blank');
+              const message = encodeURIComponent(
+                "Hi! I want to book your 5-star laundry service."
+              );
+              window.open(
+                `https://wa.me/+966539529624?text=${message}`,
+                "_blank"
+              );
             }}
             className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-success hover:bg-success/90 rounded-full shadow-lg hover:shadow-xl transition-all"
           >
