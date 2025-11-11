@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const pricingItems = [
@@ -49,38 +55,52 @@ const pricingItems = [
 const PricingGrid = () => {
   const handleOrder = () => {
     const message = encodeURIComponent("Hi! I want to order laundry service.");
-    window.open(`https://wa.me/+966539529624?text=${message}`, '_blank');
+    window.open(`https://wa.me/+966539529624?text=${message}`, "_blank");
   };
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-muted/60">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            💰 Transparent Pricing - No Hidden Fees!
+        <div className="text-center mb-8 sm:mb-12">
+          <h2
+            id="services-heading"
+            className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
+          >
+            Complete Makkah Laundry Service - All Garments
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Simple, honest pricing that saves you money. Compare with hotel laundry and see the difference!
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+            From everyday clothes to Ihram garments - our{" "}
+            <strong>express laundry service in Makkah</strong> handles
+            everything with care.
+            <span className="text-primary ml-2 font-semibold">
+              Professional cleaning at unbeatable prices starting 13 SAR/kg!
+            </span>
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {pricingItems.map((item, index) => (
-            <Card 
+            <Card
               key={index}
               className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl group"
             >
               <CardHeader className="text-center">
                 <div className="text-6xl mb-4">{item.emoji}</div>
                 <CardTitle className="text-2xl mb-2">{item.title}</CardTitle>
-                <CardDescription className="text-base">{item.subtitle}</CardDescription>
+                <CardDescription className="text-base">
+                  {item.subtitle}
+                </CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4">
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-1">{item.price}</div>
-                  <div className="text-sm text-muted-foreground">Ready in {item.time}</div>
+                  <div className="text-3xl font-bold text-primary mb-1">
+                    {item.price}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    Ready in {item.time}
+                  </div>
                 </div>
-                <Button 
+                <Button
                   onClick={handleOrder}
                   className="w-full bg-success hover:bg-success/90"
                 >

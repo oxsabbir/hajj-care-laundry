@@ -17,7 +17,7 @@ const Index = () => {
       <UrgentService />
       <AreaCoverage />
       <Comparison />
-      <WhyChoose />
+      {/* <WhyChoose /> */}
       <PricingGrid />
       <HowItWorks />
       <PickupManager />
