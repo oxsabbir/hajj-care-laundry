@@ -38,7 +38,7 @@ const HeroNew = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-black/80 min-h-screen flex items-center">
+    <section className="relative overflow-hidden bg-black/80 min-h-screen flex items-center pt-16">
       <img
         src={heroImage}
         alt="Professional clock tower laundry service  - Express laundry pickup and delivery in Makkah for pilgrims"

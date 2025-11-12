@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import HeroNew from "@/components/HeroNew";
 import AreaCoverage from "@/components/AreaCoverage";
 import Comparison from "@/components/Comparison";
@@ -18,19 +19,28 @@ import EmergencyService from "@/components/EmergencyService";
 const Index = () => {
   return (
     <main className="min-h-screen">
+      <Navigation />
       <HeroNew />
-      <UrgentService />
+      <div id="services">
+        <UrgentService />
+      </div>
       <AreaCoverage />
       <Comparison />
-      <PricingGrid />
+      <div id="pricing">
+        <PricingGrid />
+      </div>
       <HowItWorks />
       <PricingSection />
       <PilgrimGuide />
-      <Testimonials />
+      <div id="testimonials">
+        <Testimonials />
+      </div>
       <Faq />
       <EmergencyService />
       <FinalCTO />
-      <PickupManager />
+      <div id="contact">
+        <PickupManager />
+      </div>
     </main>
   );
 };
