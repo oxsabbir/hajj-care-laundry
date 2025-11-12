@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import WhatsAppIcon from "./icons/Whatsapp";
+import logo_light from "@/assets/logo_light.png";
+import logo_dark from "@/assets/logo_dark.png";
 
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
@@ -60,19 +62,17 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-2 group"
           >
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-success to-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-              <span className="text-white font-bold text-lg">CT</span>
-            </div>
-            <div className="hidden sm:block">
-              <div
-                className={`${
-                  isScrolled ? "text-foreground" : "text-white"
-                } font-bold text-lg leading-tight`}
-              >
-                Clock Tower
-              </div>
-              <div className="text-success text-xs font-semibold">
-                Laundry Service
+            <div className="hidden sm:block py-1.5">
+              <div className="w-fit h-[60px]">
+                <a href="/">
+                  <img
+                    src={!isScrolled ? logo_dark : logo_light}
+                    alt="Clock Tower laundry logo"
+                    width={200}
+                    height={100}
+                    className="w-full h-full object-contain"
+                  />
+                </a>
               </div>
             </div>
           </button>

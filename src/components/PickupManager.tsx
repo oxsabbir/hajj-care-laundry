@@ -20,12 +20,13 @@ export default function PickupManager() {
               id="manager-heading"
               className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
             >
-              Meet SOHEL RANA - Your Personal Pickup Coordinator
+              Meet {managerInfo.fullName} - Your Personal Pickup Coordinator
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
               Why deal with different people every time?{" "}
               <span className="text-primary font-semibold">
-                SOHEL RANA personally handles your laundry service pickup
+                {managerInfo.fullName} personally handles your laundry service
+                pickup
               </span>{" "}
               - building trust and ensuring consistent, reliable service for
               every customer in Makkah.
@@ -36,11 +37,11 @@ export default function PickupManager() {
               <div className="text-center mb-6">
                 <div className="w-20 h-20 sm:w-24 sm:h-24 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl sm:text-3xl font-bold text-primary-foreground">
-                    SR
+                    {managerInfo.fullName.slice(0, 2).toUpperCase()}
                   </span>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
-                  SOHEL RANA
+                  {managerInfo.fullName}
                 </h3>
                 <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 mb-4">
                   Personal Pickup Coordinator
@@ -74,7 +75,7 @@ export default function PickupManager() {
               </div>
               <div className="bg-muted/50 rounded-xl p-4 sm:p-6 mb-6">
                 <h4 className="font-bold text-foreground mb-4 text-center">
-                  🌟 Why Customers Love SOHEL RANA:
+                  🌟 Why Customers Love {managerInfo.fullName}:
                 </h4>
                 <div className="space-y-3 text-sm sm:text-base">
                   <div className="flex items-start gap-3">
@@ -181,9 +182,10 @@ export default function PickupManager() {
                   </svg>
                 </div>
                 <p className="text-sm sm:text-base text-center text-muted-foreground italic mb-2">
-                  "SOHEL RANA is amazing! He picked up our laundry within 10
-                  minutes and even helped us with directions to the Haram. Such
-                  personal service - you don't get this anywhere else!"
+                  "{managerInfo.fullName} is amazing! He picked up our laundry
+                  within 10 minutes and even helped us with directions to the
+                  Haram. Such personal service - you don't get this anywhere
+                  else!"
                 </p>
                 <p className="text-xs text-center text-muted-foreground">
                   - Ahmed F., Pilgrim from Malaysia
