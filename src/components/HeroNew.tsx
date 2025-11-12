@@ -9,10 +9,28 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/hero-laundry.webp";
 import WhatsAppIcon from "./icons/Whatsapp";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const HeroNew = () => {
+  const [displayedText, setDisplayedText] = useState("");
+  const fullText = "15 Minutes";
+  
+  useEffect(() => {
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setDisplayedText(fullText.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 100);
+    
+    return () => clearInterval(interval);
+  }, []);
+
   const handleWhatsApp = () => {
-    // Replace with actual WhatsApp number
     const message = encodeURIComponent(
       "Hi! I need laundry service in Makkah. Please send pickup details."
     );
@@ -40,7 +58,10 @@ const HeroNew = () => {
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-accent">
               Clock Tower Laundry Service <br /> <span>Makkah</span>
             </span>
-            <span className="text-accent">15 Minutes</span> Express Pickup -
+            <span className="text-accent inline-block min-w-[200px] sm:min-w-[280px]">
+              {displayedText}
+              <span className="animate-pulse">|</span>
+            </span> Express Pickup -
             Best Laundry Near Haram!
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">

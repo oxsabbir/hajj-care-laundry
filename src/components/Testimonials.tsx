@@ -9,6 +9,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
 
 const testimonials = [
   {
@@ -95,24 +97,50 @@ const testimonials = [
 
 const Testimonials = () => {
   const plugin = useRef(null);
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   useEffect(() => {
     import("embla-carousel-autoplay").then((AutoplayPlugin) => {
-      plugin.current = AutoplayPlugin.default({ delay: 3000 });
+      plugin.current = AutoplayPlugin.default({ 
+        delay: 3000, 
+        stopOnInteraction: false,
+        stopOnMouseEnter: true 
+      });
     });
   }, []);
 
   return (
-    <section className="py-20 bg-background">
+    <section ref={sectionRef} className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-4xl font-bold mb-4 text-foreground">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.6 }}
+        >
+          <motion.h2 
+            className="text-4xl md:text-4xl font-bold mb-4 text-foreground"
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            animate={isInView ? { opacity: 1, filter: "blur(0px)" } : { opacity: 0, filter: "blur(10px)" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             What Our Customers Say
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          </motion.h2>
+          <motion.p 
+            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             5000+ happy customers from 50+ countries trust us with their laundry
-          </p>
-          <div className="flex items-center justify-center gap-2 mt-4">
+          </motion.p>
+          <motion.div 
+            className="flex items-center justify-center gap-2 mt-4"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             <div className="flex gap-1">
               {[1, 2, 3, 4, 5].map((star) => (
                 <Star key={star} className="w-6 h-6 fill-accent text-accent" />
@@ -120,8 +148,8 @@ const Testimonials = () => {
             </div>
             <span className="text-xl font-bold text-foreground">4.9/5</span>
             <span className="text-muted-foreground">(5000+ reviews)</span>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         <div className="max-w-6xl mx-auto">
           <Carousel
@@ -135,59 +163,66 @@ const Testimonials = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2">
-                    <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl h-full">
-                      <CardContent className="p-6">
-                        {/* Quote Icon */}
-                        <div className="mb-4">
-                          <Quote className="w-10 h-10 text-primary/30" />
+                  <motion.div 
+                    className="p-2 h-full"
+                    initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
+                    animate={isInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : { opacity: 0, y: 50, filter: "blur(10px)" }}
+                    transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
+                  >
+                    <Card className="relative overflow-hidden border-0 bg-gradient-to-br from-card via-card to-card/50 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full group">
+                      <div className="absolute inset-0 bg-gradient-to-br from-success/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <CardContent className="p-6 relative z-10">
+                        {/* Quote Icon with gradient background */}
+                        <div className="mb-4 relative">
+                          <div className="absolute inset-0 bg-gradient-to-br from-success/20 to-primary/20 rounded-full blur-xl" />
+                          <Quote className="w-10 h-10 text-success relative z-10" />
                         </div>
 
-                        {/* Rating */}
+                        {/* Rating with glow effect */}
                         <div className="flex gap-1 mb-4">
                           {[1, 2, 3, 4, 5].map((star) => (
                             <Star
                               key={star}
-                              className={`w-5 h-5 ${
+                              className={`w-5 h-5 transition-all duration-300 ${
                                 star <= testimonial.rating
-                                  ? "fill-accent text-accent"
+                                  ? "fill-accent text-accent drop-shadow-[0_0_8px_hsl(var(--accent))]"
                                   : "text-muted"
                               }`}
                             />
                           ))}
                         </div>
 
-                        {/* Review Text */}
-                        <p className="text-muted-foreground mb-6 leading-relaxed italic">
+                        {/* Review Text with better typography */}
+                        <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
                           "{testimonial.review}"
                         </p>
 
-                        {/* Customer Info */}
-                        <div className="flex items-start gap-3 pt-4 border-t border-border">
-                          <Avatar className="w-12 h-12 border-2 border-primary">
+                        {/* Customer Info with enhanced styling */}
+                        <div className="flex items-start gap-3 pt-4 border-t border-border/50">
+                          <Avatar className="w-12 h-12 border-2 border-success/50 shadow-lg ring-2 ring-success/10">
                             <AvatarImage src="" />
-                            <AvatarFallback className="bg-primary/10 text-primary font-semibold">
+                            <AvatarFallback className="bg-gradient-to-br from-success/20 to-primary/20 text-success font-bold text-sm">
                               {testimonial.avatar}
                             </AvatarFallback>
                           </Avatar>
                           <div className="flex-1 min-w-0">
-                            <div className="font-semibold text-foreground flex items-center gap-2">
+                            <div className="font-semibold text-foreground flex items-center gap-2 text-sm">
                               {testimonial.name}
-                              <span className="text-xl">
+                              <span className="text-lg">
                                 {testimonial.flag}
                               </span>
                             </div>
-                            <div className="text-sm text-muted-foreground">
+                            <div className="text-xs text-muted-foreground font-medium">
                               {testimonial.location}
                             </div>
-                            <div className="text-xs text-muted-foreground">
+                            <div className="text-xs text-muted-foreground/70">
                               {testimonial.country}
                             </div>
                           </div>
                         </div>
                       </CardContent>
                     </Card>
-                  </div>
+                  </motion.div>
                 </CarouselItem>
               ))}
             </CarouselContent>
