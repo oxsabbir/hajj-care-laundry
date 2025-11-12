@@ -9,6 +9,7 @@ import logo_dark from "@/assets/logo_dark.png";
 import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
+import { managerInfo } from "@/constants";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -179,7 +180,7 @@ const Navigation = () => {
                     <p className="font-semibold text-foreground">
                       24/7 Service Available
                     </p>
-                    <p>📞 +966 53 952 9624</p>
+                    <p>📞 {managerInfo.whatsApp}</p>
                     <p>⏱️ 15 Min Pickup Time</p>
                   </div>
                 </motion.div>

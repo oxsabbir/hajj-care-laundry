@@ -33,12 +33,12 @@ const Comparison = () => {
             </span>
           </p>
         </header>
-        <div className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
+        <div className="bg-gradient-to-r  from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
           <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white">
             Our Services and Other Makkah Laundry Providers
           </h3>
-          <div className="overflow-x-auto">
-            <div className="min-w-[400px]">
+          <div className="overflow-x-auto w-full">
+            <div className="">
               <div className="grid grid-cols-3  gap-2 sm:gap-4 text-center">
                 <div className="font-semibold  text-sm sm:text-base text-white">
                   Feature
@@ -49,18 +49,20 @@ const Comparison = () => {
                 <div className="font-semibold text-sm sm:text-base text-white">
                   Others
                 </div>
+              </div>
+              <div className="px-2 md:px-4 py-2">
                 {comparisonData.map((item, i) => (
-                  <>
+                  <div key={i} className="grid grid-cols-3 my-3 gap-4 md:gap-6">
                     <div className="text-xs font-semibold sm:text-sm font-mediumbaktext-white text-[#E7E7E7] p-2">
                       {item.feature}
                     </div>
-                    <div className="text-xs sm:text-sm font-bold text-primary bg-green-50 dark:bg-green-900/20 rounded-lg p-2">
+                    <div className="text-xs sm:text-sm font-bold text-center text-primary bg-green-50 dark:bg-green-900/20 rounded-lg p-2">
                       {item.us}
                     </div>
-                    <div className="text-xs sm:text-sm text-red-600 bg-red-100 dark:bg-red-900/20 rounded-lg p-2">
+                    <div className="text-xs sm:text-sm text-red-600 text-center bg-red-100 dark:bg-red-900/20 rounded-lg p-2">
                       {item.others}
                     </div>
-                  </>
+                  </div>
                 ))}
               </div>
             </div>
