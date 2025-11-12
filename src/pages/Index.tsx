@@ -41,6 +41,7 @@ const Index = () => {
       <div id="contact">
         <PickupManager />
       </div>
+      <Footer />
     </main>
   );
 };
