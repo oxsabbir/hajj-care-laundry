@@ -7,9 +7,9 @@ const PrivacyPolicy = () => {
   return (
     <main className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary/5 to-background">
+      <section className="pt-32 pb-16 bg-gradient-to-b from-primary to-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -22,10 +22,16 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Your privacy and trust are important to us. Here's how we protect your information.
+              Your privacy and trust are important to us. Here's how we protect
+              your information.
             </p>
             <p className="text-sm text-muted-foreground mt-4">
-              Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+              Last Updated:{" "}
+              {new Date().toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+              })}
             </p>
           </motion.div>
         </div>
@@ -44,7 +50,10 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <p className="text-muted-foreground leading-relaxed text-lg">
-                At Clock Tower Laundry Service, we are committed to protecting your privacy and handling your personal information with care and respect. This Privacy Policy explains what information we collect, why we collect it, and how we use it.
+                At Clock Tower Laundry Service, we are committed to protecting
+                your privacy and handling your personal information with care
+                and respect. This Privacy Policy explains what information we
+                collect, why we collect it, and how we use it.
               </p>
             </motion.div>
 
@@ -68,35 +77,58 @@ const PrivacyPolicy = () => {
               </div>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We collect only the essential information needed to provide our laundry services effectively:
+                  We collect only the essential information needed to provide
+                  our laundry services effectively:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
                     <div>
-                      <strong className="text-foreground">Contact Information:</strong>
-                      <span className="text-muted-foreground"> Your name, phone number, WhatsApp number, and delivery address</span>
+                      <strong className="text-foreground">
+                        Contact Information:
+                      </strong>
+                      <span className="text-muted-foreground">
+                        {" "}
+                        Your name, phone number, WhatsApp number, and delivery
+                        address
+                      </span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
                     <div>
-                      <strong className="text-foreground">Order Details:</strong>
-                      <span className="text-muted-foreground"> Information about your laundry items, service preferences, and special instructions</span>
+                      <strong className="text-foreground">
+                        Order Details:
+                      </strong>
+                      <span className="text-muted-foreground">
+                        {" "}
+                        Information about your laundry items, service
+                        preferences, and special instructions
+                      </span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
                     <div>
-                      <strong className="text-foreground">Payment Information:</strong>
-                      <span className="text-muted-foreground"> Basic payment method details for billing purposes</span>
+                      <strong className="text-foreground">
+                        Payment Information:
+                      </strong>
+                      <span className="text-muted-foreground">
+                        {" "}
+                        Basic payment method details for billing purposes
+                      </span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
                     <div>
-                      <strong className="text-foreground">Communication Records:</strong>
-                      <span className="text-muted-foreground"> Messages and calls related to your service requests</span>
+                      <strong className="text-foreground">
+                        Communication Records:
+                      </strong>
+                      <span className="text-muted-foreground">
+                        {" "}
+                        Messages and calls related to your service requests
+                      </span>
                     </div>
                   </li>
                 </ul>
@@ -123,28 +155,41 @@ const PrivacyPolicy = () => {
               </div>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We use your information solely to provide and improve our laundry services:
+                  We use your information solely to provide and improve our
+                  laundry services:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">To process your laundry orders and coordinate pickup/delivery</span>
+                    <span className="text-muted-foreground">
+                      To process your laundry orders and coordinate
+                      pickup/delivery
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">To communicate with you about your orders and service updates</span>
+                    <span className="text-muted-foreground">
+                      To communicate with you about your orders and service
+                      updates
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">To improve our service quality based on your feedback</span>
+                    <span className="text-muted-foreground">
+                      To improve our service quality based on your feedback
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">To send you important service notifications</span>
+                    <span className="text-muted-foreground">
+                      To send you important service notifications
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">To maintain accurate records for quality assurance</span>
+                    <span className="text-muted-foreground">
+                      To maintain accurate records for quality assurance
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -164,21 +209,34 @@ const PrivacyPolicy = () => {
               <div className="bg-gradient-to-br from-success/5 to-primary/5 p-8 rounded-2xl border border-border">
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">We Never Sell Your Data</h3>
+                    <h3 className="text-xl font-bold text-foreground mb-3">
+                      We Never Sell Your Data
+                    </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Your personal information is never sold, rented, or shared with third parties for marketing purposes. We treat your data with the utmost confidentiality.
+                      Your personal information is never sold, rented, or shared
+                      with third parties for marketing purposes. We treat your
+                      data with the utmost confidentiality.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">Limited Sharing</h3>
+                    <h3 className="text-xl font-bold text-foreground mb-3">
+                      Limited Sharing
+                    </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      We only share your information with our trusted service team members who need it to complete your laundry orders. All team members are bound by strict confidentiality agreements.
+                      We only share your information with our trusted service
+                      team members who need it to complete your laundry orders.
+                      All team members are bound by strict confidentiality
+                      agreements.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">Secure Storage</h3>
+                    <h3 className="text-xl font-bold text-foreground mb-3">
+                      Secure Storage
+                    </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Your information is stored securely and protected against unauthorized access. We implement industry-standard security measures to safeguard your data.
+                      Your information is stored securely and protected against
+                      unauthorized access. We implement industry-standard
+                      security measures to safeguard your data.
                     </p>
                   </div>
                 </div>
@@ -198,20 +256,30 @@ const PrivacyPolicy = () => {
               </h2>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Our website may use cookies and analytics tools to improve your browsing experience:
+                  Our website may use cookies and analytics tools to improve
+                  your browsing experience:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">Cookies help remember your preferences and improve site functionality</span>
+                    <span className="text-muted-foreground">
+                      Cookies help remember your preferences and improve site
+                      functionality
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">Analytics help us understand how visitors use our website to make improvements</span>
+                    <span className="text-muted-foreground">
+                      Analytics help us understand how visitors use our website
+                      to make improvements
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">You can disable cookies in your browser settings if preferred</span>
+                    <span className="text-muted-foreground">
+                      You can disable cookies in your browser settings if
+                      preferred
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -235,19 +303,28 @@ const PrivacyPolicy = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">Request access to your personal information</span>
+                    <span className="text-muted-foreground">
+                      Request access to your personal information
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">Request corrections to any inaccurate information</span>
+                    <span className="text-muted-foreground">
+                      Request corrections to any inaccurate information
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">Request deletion of your data (subject to legal requirements)</span>
+                    <span className="text-muted-foreground">
+                      Request deletion of your data (subject to legal
+                      requirements)
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-success mt-2 flex-shrink-0"></span>
-                    <span className="text-muted-foreground">Opt out of marketing communications at any time</span>
+                    <span className="text-muted-foreground">
+                      Opt out of marketing communications at any time
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -273,14 +350,27 @@ const PrivacyPolicy = () => {
               </div>
               <div className="bg-gradient-to-r from-primary/10 to-success/10 p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  If you have any questions or concerns about how we handle your personal information, please don't hesitate to contact us:
+                  If you have any questions or concerns about how we handle your
+                  personal information, please don't hesitate to contact us:
                 </p>
                 <div className="space-y-2">
                   <p className="text-foreground">
-                    <strong>Email:</strong> <a href="mailto:info@clocktowerlaundryservice.com" className="text-success hover:underline">info@clocktowerlaundryservice.com</a>
+                    <strong>Email:</strong>{" "}
+                    <a
+                      href="mailto:info@clocktowerlaundryservice.com"
+                      className="text-success hover:underline"
+                    >
+                      info@clocktowerlaundryservice.com
+                    </a>
                   </p>
                   <p className="text-foreground">
-                    <strong>WhatsApp:</strong> <a href="https://wa.me/966535934992" className="text-success hover:underline">+966 53 593 4992</a>
+                    <strong>WhatsApp:</strong>{" "}
+                    <a
+                      href="https://wa.me/966535934992"
+                      className="text-success hover:underline"
+                    >
+                      +966 53 593 4992
+                    </a>
                   </p>
                 </div>
               </div>
@@ -298,7 +388,12 @@ const PrivacyPolicy = () => {
               </h2>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <p className="text-muted-foreground leading-relaxed">
-                  We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. We will notify you of any significant changes by posting the updated policy on our website with a new "Last Updated" date. We encourage you to review this page periodically to stay informed about how we protect your information.
+                  We may update this Privacy Policy from time to time to reflect
+                  changes in our practices or for legal reasons. We will notify
+                  you of any significant changes by posting the updated policy
+                  on our website with a new "Last Updated" date. We encourage
+                  you to review this page periodically to stay informed about
+                  how we protect your information.
                 </p>
               </div>
             </motion.div>

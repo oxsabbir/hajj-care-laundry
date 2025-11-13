@@ -9,9 +9,9 @@ const Contact = () => {
   return (
     <main className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary/5 to-background">
+      <section className="pt-32 pb-16 bg-gradient-to-b from-primary to-background">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,8 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              We're here to help with all your laundry needs in Makkah. Reach out anytime — we're available 24/7!
+              We're here to help with all your laundry needs in Makkah. Reach
+              out anytime — we're available 24/7!
             </p>
           </motion.div>
         </div>
@@ -63,8 +64,12 @@ const Contact = () => {
                 <Phone className="w-7 h-7 text-success" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Phone</h3>
-              <p className="text-muted-foreground text-sm mb-3">Call us directly</p>
-              <p className="text-foreground font-semibold">{managerInfo.phoneNumber}</p>
+              <p className="text-muted-foreground text-sm mb-3">
+                Call us directly
+              </p>
+              <p className="text-foreground font-semibold">
+                {managerInfo.phoneNumber}
+              </p>
             </motion.a>
 
             <motion.a
@@ -79,8 +84,12 @@ const Contact = () => {
                 <Mail className="w-7 h-7 text-success" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Email</h3>
-              <p className="text-muted-foreground text-sm mb-3">Send us a message</p>
-              <p className="text-foreground font-semibold text-sm break-all">info@clocktowerlaundryservice.com</p>
+              <p className="text-muted-foreground text-sm mb-3">
+                Send us a message
+              </p>
+              <p className="text-foreground font-semibold text-sm break-all">
+                info@clocktowerlaundryservice.com
+              </p>
             </motion.a>
 
             <motion.div
@@ -94,7 +103,9 @@ const Contact = () => {
                 <Clock className="w-7 h-7 text-success" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Hours</h3>
-              <p className="text-muted-foreground text-sm mb-3">Always available</p>
+              <p className="text-muted-foreground text-sm mb-3">
+                Always available
+              </p>
               <p className="text-foreground font-semibold">24/7 Service</p>
             </motion.div>
           </div>
@@ -113,10 +124,16 @@ const Contact = () => {
                 Book Your Pickup Now
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Ready for express laundry service? Contact us via WhatsApp and we'll be at your location in just 15 minutes. Available 24/7 for your convenience.
+                Ready for express laundry service? Contact us via WhatsApp and
+                we'll be at your location in just 15 minutes. Available 24/7 for
+                your convenience.
               </p>
               <a
-                href={`https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${encodeURIComponent("Hi! I'd like to book a laundry pickup.")}`}
+                href={`https://wa.me/${
+                  managerInfo.onlyNumber.whatsApp
+                }?text=${encodeURIComponent(
+                  "Hi! I'd like to book a laundry pickup."
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-success hover:bg-success/90 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
@@ -141,7 +158,9 @@ const Contact = () => {
               </h2>
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-success" />
-                <p className="text-lg">Clock Tower Area, Makkah, Saudi Arabia</p>
+                <p className="text-lg">
+                  Clock Tower Area, Makkah, Saudi Arabia
+                </p>
               </div>
             </div>
 

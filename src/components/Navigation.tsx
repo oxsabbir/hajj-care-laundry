@@ -10,10 +10,14 @@ import { motion } from "motion/react";
 import { handleWhatsApp } from "@/lib/utils";
 import { whatsappMessages } from "@/constants/messages";
 import { managerInfo } from "@/constants";
+import { useNavigate, useResolvedPath } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const navigate = useNavigate();
+  const pathname = useResolvedPath("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,14 +39,24 @@ const Navigation = () => {
         behavior: "smooth",
       });
       setIsOpen(false);
+    } else {
+      if (pathname.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          const elementExist = document.getElementById(sectionId);
+          if (elementExist) {
+            scrollToSection(sectionId);
+          }
+        }, 300);
+      }
     }
   };
 
   const menuItems = [
-    { label: "Services", id: "services" },
-    { label: "Pricing", id: "pricing" },
-    { label: "Testimonials", id: "testimonials" },
-    { label: "Contact", id: "contact" },
+    { label: "Services", id: "services", url: "/#services" },
+    { label: "Pricing", id: "pricing", url: "/#pricing" },
+    { label: "Testimonials", id: "testimonials", url: "/#testimonials" },
+    { label: "Contact", id: "contact", url: "/contact" },
   ];
 
   return (
