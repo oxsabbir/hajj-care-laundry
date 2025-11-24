@@ -118,6 +118,7 @@ const HowItWorks = () => {
           </p>
           <Button
             size="lg"
+            id="generate_lead"
             onClick={handleStart}
             className="bg-success hover:bg-success/90 text-white md:text-lg px-4 py-3 text-base md:px-8 md:py-6"
           >

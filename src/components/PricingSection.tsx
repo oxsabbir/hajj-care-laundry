@@ -91,6 +91,7 @@ export default function PricingSection() {
                 ))}
               </ul>
               <button
+                id="generate_lead"
                 onClick={() =>
                   handlePlanBooking(
                     pricePlan.basic.price,
@@ -132,6 +133,7 @@ export default function PricingSection() {
               </ul>
 
               <Button
+                id="generate_lead"
                 onClick={() =>
                   handlePlanBooking(
                     pricePlan.premium.price,
@@ -169,6 +171,7 @@ export default function PricingSection() {
                 ))}
               </ul>
               <button
+                id="generate_lead"
                 onClick={() =>
                   handlePlanBooking(pricePlan.vip.price, pricePlan.vip.title)
                 }

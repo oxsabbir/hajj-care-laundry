@@ -193,6 +193,7 @@ export default function PickupManager() {
               </div>
               <div className="space-y-4">
                 <button
+                  id="generate_lead"
                   onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
                   className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-[#25D366] text-white hover:bg-[#128C7E] hover:shadow-xl transition-all w-full text-base sm:text-lg px-6 py-4 h-auto rounded-xl font-bold shadow-lg"
                 >

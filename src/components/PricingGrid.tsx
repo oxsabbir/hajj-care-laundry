@@ -106,6 +106,7 @@ const PricingGrid = () => {
                   </div>
                 </div>
                 <Button
+                  id="generate_lead"
                   onClick={() => handleOrder(item.title, item.price)}
                   className="w-full bg-success hover:bg-success/90"
                 >
