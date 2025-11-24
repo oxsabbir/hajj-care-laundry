@@ -60,7 +60,7 @@ const PricingGrid = () => {
       .replace("<package>", packageName)
       .replace("<price>", price);
 
-    handleWhatsApp(message);
+    handleWhatsApp(message, true);
   };
 
   return (

@@ -117,7 +117,7 @@ const Navigation = () => {
               </Button>
             ))}
             <Button
-              onClick={() => handleWhatsApp(whatsappMessages.pickup)}
+              onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
               className="ml-2 bg-success hover:bg-success/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               <WhatsAppIcon size={18} className="mr-2" />
@@ -185,7 +185,9 @@ const Navigation = () => {
                   className="mt-4"
                 >
                   <Button
-                    onClick={() => handleWhatsApp(whatsappMessages.pickup)}
+                    onClick={() =>
+                      handleWhatsApp(whatsappMessages.pickup, true)
+                    }
                     className="w-full bg-success hover:bg-success/90 text-white font-semibold shadow-lg text-base h-12"
                   >
                     <WhatsAppIcon size={20} className="mr-2" />

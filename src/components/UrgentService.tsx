@@ -6,7 +6,7 @@ export default function UrgentService() {
     const message = whatsappMessages.booking
       .replace("<bookingHour>", hourDetails)
       .replace("<bookingService>", service);
-    handleWhatsApp(message);
+    handleWhatsApp(message, true);
   };
   return (
     <section

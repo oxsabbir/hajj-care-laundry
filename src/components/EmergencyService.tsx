@@ -106,7 +106,7 @@ export default function EmergencyService() {
             </div>
           </div>
           <button
-            onClick={() => handleWhatsApp(whatsappMessages.emergency)}
+            onClick={() => handleWhatsApp(whatsappMessages.emergency, true)}
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none bg-destructive text-destructive-foreground hover:bg-destructive/90 h-10 w-full sm:w-auto px-8 py-4 text-lg font-bold"
           >
             <WhatsAppIcon size={22} />

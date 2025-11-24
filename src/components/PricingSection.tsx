@@ -47,7 +47,7 @@ export default function PricingSection() {
       .replace("<price>", String(price))
       .replace("<plan>", plan);
 
-    handleWhatsApp(message);
+    handleWhatsApp(message, true);
   };
 
   return (

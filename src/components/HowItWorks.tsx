@@ -38,7 +38,7 @@ const steps = [
 
 const HowItWorks = () => {
   const handleStart = () => {
-    handleWhatsApp(whatsappMessages.firstOrder);
+    handleWhatsApp(whatsappMessages.firstOrder, true);
   };
 
   return (

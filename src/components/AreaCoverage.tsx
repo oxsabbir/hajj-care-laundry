@@ -60,7 +60,7 @@ const AreaCoverage = () => {
       location
     );
 
-    handleWhatsApp(message);
+    handleWhatsApp(message, false);
   };
 
   return (

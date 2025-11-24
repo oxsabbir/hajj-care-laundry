@@ -163,7 +163,7 @@ const HeroNew = () => {
           </div>
           <div className="space-y-3 sm:space-y-4 px-2">
             <button
-              onClick={() => handleWhatsApp(whatsappMessages.pickup)}
+              onClick={() => handleWhatsApp(whatsappMessages.pickup, true)}
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 hover:shadow-xl transition-all w-full text-base sm:text-xl px-6 py-4 sm:py-6 h-auto rounded-xl font-bold shadow-lg"
             >
