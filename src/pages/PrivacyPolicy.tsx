@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { motion } from "motion/react";
 import { Shield, Lock, Eye, Mail } from "lucide-react";
+import { managerInfo } from "@/constants";
 
 const PrivacyPolicy = () => {
   return (
@@ -50,7 +51,7 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <p className="text-muted-foreground leading-relaxed text-lg">
-                At Clock Tower Laundry Service, we are committed to protecting
+                At ZamZam Insaf Laundry Service, we are committed to protecting
                 your privacy and handling your personal information with care
                 and respect. This Privacy Policy explains what information we
                 collect, why we collect it, and how we use it.
@@ -357,19 +358,19 @@ const PrivacyPolicy = () => {
                   <p className="text-foreground">
                     <strong>Email:</strong>{" "}
                     <a
-                      href="mailto:info@clocktowerlaundryservice.com"
+                      href={`mailto:${managerInfo.email}`}
                       className="text-success hover:underline"
                     >
-                      info@clocktowerlaundryservice.com
+                      {managerInfo.email}
                     </a>
                   </p>
                   <p className="text-foreground">
                     <strong>WhatsApp:</strong>{" "}
                     <a
-                      href="https://wa.me/966535934992"
+                      href={`https://wa.me/${managerInfo.onlyNumber.whatsApp}`}
                       className="text-success hover:underline"
                     >
-                      +966 53 593 4992
+                      {managerInfo.whatsApp}
                     </a>
                   </p>
                 </div>

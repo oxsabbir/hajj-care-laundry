@@ -93,7 +93,7 @@ const Navigation = () => {
                 <a href="/">
                   <img
                     src={logo}
-                    alt="Clock Tower laundry logo"
+                    alt="ZamZam Insaf laundry logo"
                     width={200}
                     height={100}
                     className="w-full h-full object-contain"
@@ -150,7 +150,7 @@ const Navigation = () => {
                     <a href="/">
                       <img
                         src={logo}
-                        alt="Clock Tower laundry logo"
+                        alt="ZamZam Insaf laundry logo"
                         width={200}
                         height={100}
                         className="w-full h-full object-contain"

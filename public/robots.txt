@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://laundryclocktowermakkah.com/sitemap.xml
+Sitemap: https://zamzaminsaflaundry.com/sitemap.xml

@@ -9,6 +9,7 @@ import {
   DollarSign,
   Shield,
 } from "lucide-react";
+import { managerInfo } from "@/constants";
 
 const TermsConditions = () => {
   return (
@@ -57,7 +58,7 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <p className="text-muted-foreground leading-relaxed text-lg">
-                By using Clock Tower Laundry Service, you agree to these Terms
+                By using ZamZam Insaf Laundry Service, you agree to these Terms
                 and Conditions. These terms govern your use of our pickup and
                 delivery laundry services in Makkah, Saudi Arabia.
               </p>
@@ -91,7 +92,7 @@ const TermsConditions = () => {
                         {" "}
                         Our services are available throughout Makkah, with
                         priority service in areas near Masjid al-Haram and the
-                        Clock Tower.
+                        ZamZam Insaf.
                       </span>
                     </div>
                   </li>
@@ -505,28 +506,28 @@ const TermsConditions = () => {
                   <p className="text-foreground">
                     <strong>Email:</strong>{" "}
                     <a
-                      href="mailto:info@clocktowerlaundryservice.com"
+                      href={`mailto:${managerInfo.email}`}
                       className="text-success hover:underline"
                     >
-                      info@clocktowerlaundryservice.com
+                      {managerInfo.email}
                     </a>
                   </p>
                   <p className="text-foreground">
                     <strong>WhatsApp:</strong>{" "}
                     <a
-                      href="https://wa.me/966535934992"
+                      href={`https://wa.me/${managerInfo.onlyNumber.whatsApp}`}
                       className="text-success hover:underline"
                     >
-                      +966 53 593 4992
+                      {managerInfo.onlyNumber.whatsApp}
                     </a>
                   </p>
                   <p className="text-foreground">
                     <strong>Phone:</strong>{" "}
                     <a
-                      href="tel:+966535934992"
+                      href={`tel:+${managerInfo.onlyNumber.phoneNumber}`}
                       className="text-success hover:underline"
                     >
-                      +966 53 593 4992
+                      {managerInfo.onlyNumber.whatsApp}
                     </a>
                   </p>
                 </div>
