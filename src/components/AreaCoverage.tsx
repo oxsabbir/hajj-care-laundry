@@ -12,7 +12,7 @@ const areas = [
     emoji: "🕌",
     title: "Haram Area & Abraj Al Bait",
     description:
-      "Lightning-fast service for hotels closest to Masjid al-Haram. Specializing in pilgrim laundry needs.",
+      "Rapid laundry solutions for accommodations directly adjacent to Masjid al-Haram. Catering specifically to the needs of pilgrims.",
     locations: [
       { name: "Clock Tower Hotels", time: "5-10 min" },
       { name: "Al Safwah Towers", time: "5-10 min" },
@@ -23,7 +23,7 @@ const areas = [
     emoji: "🏨",
     title: "Jabal Omar & Aziziyah",
     description:
-      "Premium service for luxury hotel districts with 24/7 pickup availability.",
+      "Tailored services for premium hotel districts, offering convenient 24/7 express pickup.",
     locations: [
       { name: "Jabal Omar Towers", time: "10-15 min" },
       { name: "Swissotel Makkah", time: "10-15 min" },
@@ -34,7 +34,7 @@ const areas = [
     emoji: "🌆",
     title: "Kudai & Misfalah",
     description:
-      "Fast service for mid-range accommodation areas with competitive pricing.",
+      "Efficient and affordable service for mid-tier lodging areas, ensuring quick turnaround and great value.",
     locations: [
       { name: "Kudai Area Hotels", time: "15-20 min" },
       { name: "Misfalah District", time: "15-20 min" },
@@ -44,7 +44,7 @@ const areas = [
     emoji: "🏘️",
     title: "Maabda, Al Rusaifah & Al Awali",
     description:
-      "Reliable service for all Makkah neighborhoods with same-day delivery guarantee.",
+      "Dependable and extensive service across Makkah's diverse neighborhoods, complete with same-day delivery.",
     locations: [
       { name: "Maabda Area", time: "15-25 min" },
       { name: "Al Rusaifah & Al Awali", time: "20-30 min" },
@@ -71,16 +71,12 @@ const AreaCoverage = () => {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Laundry Service Near Me - All Makkah Areas Covered
+            Extensive Laundry Coverage Across Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            No matter where you're staying in Makkah - our{" "}
-            <strong>Clock tower laundy service</strong> comes to YOU!
-            <span className="text-primary font-semibold">
-              {" "}
-              Our express pickup service covers every hotel, apartment, and area
-              near the Haram.
-            </span>
+            From bustling hotel zones to residential areas, our express pickup
+            service reaches every corner of Makkah, ensuring fresh laundry
+            wherever you are.
           </p>
         </div>
 
@@ -88,12 +84,12 @@ const AreaCoverage = () => {
           {areas.map((area, index) => (
             <div
               key={index}
-              className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border border-border"
+              className="bg-card rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all border border-border"
             >
               <div className="flex items-start gap-4 mb-4">
-                <div className="text-5xl">{area.emoji}</div>
+                <div className="text-4xl sm:text-5xl">{area.emoji}</div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">
+                  <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
                     {area.title}
                   </h3>
                   <p className="text-muted-foreground">{area.description}</p>
@@ -103,13 +99,13 @@ const AreaCoverage = () => {
                 {area.locations.map((location, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center justify-between bg-muted/50 rounded-lg p-3"
+                    className="flex flex-wrap items-center justify-between gap-2 bg-muted/50 rounded-lg p-3"
                   >
-                    <span className="font-medium text-foreground">
+                    <span className="text-sm sm:text-base font-medium text-foreground">
                       {location.name}
                     </span>
                     <Badge className="bg-success text-white">
-                      ⚡ {location.time}
+                      ⏰ {location.time} Pickup
                     </Badge>
                   </div>
                 ))}
@@ -120,7 +116,7 @@ const AreaCoverage = () => {
         <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-xl border-2 border-primary/50 bg-gradient-to-r from-primary/5 to-accent/5">
           <div className="p-4 py-6 sm:p-6 text-center">
             <h3 className="text-lg md:text-xl font-bold mb-5 text-primary">
-              Not Sure About Your Area? Get Instant Confirmation!
+              Unsure About Your Location? Get Instant Pickup Confirmation!
             </h3>
             <div className="space-y-4 ">
               <input
@@ -140,7 +136,7 @@ const AreaCoverage = () => {
               </button>
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground mt-3">
-              ✅ Instant response | ✅ No commitment needed | ✅ Available 24/7
+              ✅ Fast Reply | ✅ No Obligation | ✅ Always Available
             </p>
           </div>
         </div>
