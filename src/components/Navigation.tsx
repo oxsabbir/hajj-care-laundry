@@ -170,7 +170,7 @@ const Navigation = () => {
                     >
                       <Button
                         variant="ghost"
-                        onClick={() => scrollToSection(item.id)}
+                        onClick={() => scrollToSection(item.id, item?.url)}
                         className="w-full justify-start text-lg font-medium hover:bg-success/10 hover:text-success transition-all"
                       >
                         {item.label}
