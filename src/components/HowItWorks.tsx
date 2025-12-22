@@ -49,14 +49,13 @@ const HowItWorks = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            How Clock Tower Laundry Service Works
+            How Zamzam Insaf Laundry Works
           </h2>
           <p className="text-base sm:text-xl font-medium mb-1 text-muted-foreground max-w-3xl mx-auto">
-            Getting your laundry service in Makkah has never been this easier
-            before
+            Experience hassle-free laundry in Makkah.
             <br />
             <span className="text-primary  mt-2">
-              No waiting, No hassle - just fresh, clean clothes in 15 minutes!
+              Fresh, clean clothes, delivered quickly.
             </span>
           </p>
         </div>
@@ -94,7 +93,7 @@ const HowItWorks = () => {
                       <p className="text-muted-foreground mb-4 leading-relaxed">
                         {step.description}
                       </p>
-                      <div className="inline-flex items-center gap-2 bg-success/10 text-success px-4 py-2 rounded-full font-semibold">
+                      <div className="inline-flex items-center gap-2 bg-primary/90 text-white px-4 py-2 rounded-full font-semibold">
                         ⚡ {step.time}
                       </div>
                     </div>
