@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { motion } from "motion/react";
 import { Users, Heart, Leaf, Clock, Award, Target } from "lucide-react";
 import aboutServiceImage from "@/assets/about_zam.webp";
+import { managerInfo } from "@/constants";
 
 const About = () => {
   return (
@@ -54,9 +55,9 @@ const About = () => {
                 Who We Are
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                ZamZam Insaf Laundry Service is a reliable pickup and delivery laundry
-                provider, serving pilgrims, residents, and visitors throughout
-                the holy city with care and consistency.
+                ZamZam Insaf Laundry Service is a reliable pickup and delivery
+                laundry provider, serving pilgrims, residents, and visitors
+                throughout the holy city with care and consistency.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Based near the central areas of Makkah, close to Masjid
@@ -264,7 +265,7 @@ const About = () => {
               you focus on your spiritual journey.
             </p>
             <a
-              href="https://wa.me/966535934992"
+              href={`https://wa.me/${managerInfo.onlyNumber.whatsApp}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/90 transition-all shadow-lg hover:shadow-xl hover:scale-105"

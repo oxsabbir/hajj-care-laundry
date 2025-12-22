@@ -16,6 +16,7 @@ import PilgrimGuide from "@/components/PilgrimGuide";
 import Faq from "@/components/Faq";
 import EmergencyService from "@/components/EmergencyService";
 import FloatingCTA from "@/components/FloatingCTA";
+import OurServices from "@/components/OurServices";
 
 const Index = () => {
   return (
@@ -26,7 +27,9 @@ const Index = () => {
         <UrgentService />
       </div>
       <AreaCoverage />
+
       <Comparison />
+      <OurServices />
       <div id="pricing">
         <PricingGrid />
       </div>

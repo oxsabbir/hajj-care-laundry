@@ -6,7 +6,7 @@ export const managerInfo = {
     whatsApp: 966508635924,
     phoneNumber: 966508635924,
   },
-  address: `Ajyad Street, Near Masjid al-Haram
-Makkah 24231`,
-  email: "info@makkahlaundryservice.com",
+  address: `Ajyad St, Ajyad District, Makkah 24231, Saudi Arabia
+`,
+  email: "info@zamzaminsaflaundry.com",
 };
