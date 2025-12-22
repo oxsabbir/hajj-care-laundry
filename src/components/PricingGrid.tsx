@@ -67,19 +67,16 @@ const PricingGrid = () => {
     <section className="py-20 bg-muted/60">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 sm:mb-12">
-          <h2
-            id="services-heading"
-            className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
-          >
-            Complete Makkah Laundry Service - All Garments
-          </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            From everyday clothes to Ihram garments - our{" "}
-            <strong>express laundry service in Makkah</strong> handles
-            everything with care.
-            <span className="text-primary ml-2 font-semibold">
-              Professional cleaning at unbeatable prices starting 13 SAR/kg!
-            </span>
+                      <h2
+                      id="services-heading"
+                      className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
+                    >
+                      Affordable Excellence: Your Premier Laundry Partner in Makkah
+                    </h2>          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+            From everyday wear to special garments, experience unparalleled care
+            with our <strong className="text-primary">express laundry service in Makkah</strong>.
+            Enjoy impeccable cleaning and unbeatable prices, starting from just{" "}
+            <span className="text-primary ml-1 font-semibold">13 SAR/kg!</span>
           </p>
         </div>
 
@@ -87,7 +84,11 @@ const PricingGrid = () => {
           {pricingItems.map((item, index) => (
             <Card
               key={index}
-              className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl group"
+              className={`border-2 hover:border-primary transition-all duration-300 hover:shadow-xl group ${
+                item.title === "Ihram Clothes" || item.title === "Regular Clothes"
+                  ? "card-pulse-effect"
+                  : ""
+              }`}
             >
               <CardHeader className="text-center">
                 <div className="text-6xl mb-4">{item.emoji}</div>
