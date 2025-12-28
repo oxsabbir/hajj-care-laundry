@@ -30,6 +30,7 @@ const areas = [
       { name: "Aziziyah District", time: "12-18 min" },
     ],
   },
+
   {
     emoji: "🌆",
     title: "Kudai & Misfalah",
@@ -38,6 +39,16 @@ const areas = [
     locations: [
       { name: "Kudai Area Hotels", time: "15-20 min" },
       { name: "Misfalah District", time: "15-20 min" },
+    ],
+  },
+  {
+    emoji: "🏨",
+    title: "Hilton Suites & Nearby Hotels",
+    description:
+      "Premium laundry service tailored for hotel guests, with fast pickup and reliable delivery for a comfortable stay in Makkah.",
+    locations: [
+      { name: "Hilton Suites Makkah", time: "10-20 min" },
+      { name: "Nearby Hotels & Residences", time: "15-25 min" },
     ],
   },
   {
