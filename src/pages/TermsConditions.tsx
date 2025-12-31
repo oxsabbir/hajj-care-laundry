@@ -58,7 +58,7 @@ const TermsConditions = () => {
               className="mb-12"
             >
               <p className="text-muted-foreground leading-relaxed text-lg">
-                By using ZamZam Insaf Laundry Service, you agree to these Terms
+                By using Hajj Care Laundry, you agree to these Terms
                 and Conditions. These terms govern your use of our pickup and
                 delivery laundry services in Makkah, Saudi Arabia.
               </p>
@@ -91,8 +91,7 @@ const TermsConditions = () => {
                       <span className="text-muted-foreground">
                         {" "}
                         Our services are available throughout Makkah, with
-                        priority service in areas near Masjid al-Haram and the
-                        ZamZam Insaf.
+                        priority service in areas near Masjid al-Haram.
                       </span>
                     </div>
                   </li>
@@ -164,7 +163,7 @@ const TermsConditions = () => {
                       <strong className="text-foreground">Pricing:</strong>
                       <span className="text-muted-foreground">
                         {" "}
-                        Our standard rate starts at 13 SAR per kg. Final pricing
+                        Our standard rate starts at 12 SAR per kg. Final pricing
                         depends on the weight and type of items, as well as any
                         special services requested.
                       </span>

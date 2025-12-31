@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
               className="mb-12"
             >
               <p className="text-muted-foreground leading-relaxed text-lg">
-                At ZamZam Insaf Laundry Service, we are committed to protecting
+                At Hajj Care Laundry, we are committed to protecting
                 your privacy and handling your personal information with care
                 and respect. This Privacy Policy explains what information we
                 collect, why we collect it, and how we use it.

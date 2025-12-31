@@ -15,7 +15,7 @@ export default function FinalCTA() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="py-10 sm:py-16 relative overflow-hidden"
+      className="py-10 sm:py-16 relative bg-center overflow-hidden"
     >
       <div className="absolute inset-0 bg-gradient-to-tl from-blue-500/20 to-black/80 "></div>
       <div className="relative container mx-auto px-3 sm:px-4">
@@ -24,7 +24,8 @@ export default function FinalCTA() {
             Ready for the Most Convenient Laundry Service in Makkah?
           </h2>
           <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Join over 7500 satisfied pilgrims who rely on the fastest and most trustworthy laundry service in Makkah.
+            Join over 7500 satisfied pilgrims who rely on the fastest and most
+            trustworthy laundry service in Makkah.
             <span className="text-accent font-bold">
               {" "}
               Your fresh garments are just a 15-minute pickup away!

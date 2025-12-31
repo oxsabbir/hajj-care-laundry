@@ -20,11 +20,10 @@ const Contact = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Get in Touch
+              Contact Us
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              We're here to help with all your laundry needs in Makkah. Reach
-              out anytime — we're available 24/7!
+              Have questions or ready to book? We're here to help with all your laundry needs in Makkah, 24/7!
             </p>
           </motion.div>
         </div>
@@ -73,7 +72,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="mailto:info@clocktowerlaundryservice.com"
+              href={`mailto:${managerInfo.email}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -159,7 +158,7 @@ const Contact = () => {
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-success" />
                 <p className="text-lg">
-                  Umm Al Qura, Ash Shubaikah, Makkah 21955, Saudi Arabia
+                  {managerInfo.address}
                 </p>
               </div>
             </div>
@@ -175,7 +174,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
-                title="Clock Tower Laundry Location"
+                title="Hajj Care Laundry Location"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>
