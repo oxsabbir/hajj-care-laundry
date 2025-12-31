@@ -93,7 +93,7 @@ const Navigation = () => {
                 <a href="/">
                   <img
                     src={logo}
-                    alt="ZamZam Insaf laundry logo"
+                    alt="Hajj Care Laundry logo"
                     width={200}
                     height={100}
                     className="w-full h-full object-contain"

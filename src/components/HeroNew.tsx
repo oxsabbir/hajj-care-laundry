@@ -33,7 +33,7 @@ const HeroNew = () => {
 
       <img
         src={heroImage}
-        alt="Professional clock tower laundry service  - Express laundry pickup and delivery in Makkah for pilgrims"
+        alt="Hajj Care Laundry - Express laundry pickup and delivery in Makkah for pilgrims"
         className="absolute inset-0 w-full h-full object-cover opacity-30 "
         loading="eager"
         width="1920"
@@ -47,10 +47,10 @@ const HeroNew = () => {
           </div>
           <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground mb-3 sm:mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-accent">
-              ZamZam Insaf Laundry Service <br /> <span>Makkah</span>
+              Hajj Care Laundry <br /> <span>Makkah</span>
             </span>
-            <span className="text-accent inline-block ">15 Minutes</span>{" "}
-            Express Pickup - Best Laundry Near Haram!
+            <span className="text-accent inline-block ">15 Min Pickup</span> –
+            Your Laundry, Our Priority Near Haram!
           </h1>
           <div className="bg-black/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-6 mb-4 sm:mb-8">
             <div className="flex items-center justify-center mb-2 sm:mb-3">
@@ -131,25 +131,25 @@ const HeroNew = () => {
               </span>
             </div>
             <p className="text-sm sm:text-xl text-primary-foreground/95 font-medium mb-3 sm:mb-4 px-2">
-              "Incredibly fast service! My clothes were picked up and clean in
-              no time.
+              "Exceptional service! My clothes were handled with care and
+              returned fresh in record time.
               <span className="text-accent font-bold">
                 {" "}
-                A true blessing for any pilgrim in Makkah!"
+                Hajj Care Laundry is a blessing for pilgrims in Makkah!"
               </span>
             </p>
             <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
               <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-accent">
-                  12 SAR
+                  From 12 SAR
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Starting/kg
+                  Per Kilogram
                 </div>
               </div>
               <div className="bg-accent/20 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-2xl font-bold text-accent">
-                  15 Min
+                  Fast 15 Min
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
                   Guaranteed Pickup
@@ -160,7 +160,7 @@ const HeroNew = () => {
                   FREE
                 </div>
                 <div className="text-xs sm:text-sm text-primary-foreground/80">
-                  Pickup/Drop
+                  Collection/Delivery
                 </div>
               </div>
             </div>
@@ -178,16 +178,16 @@ const HeroNew = () => {
 
             <div className="text-primary-foreground/90 flex flex-wrap pt-4 items-center justify-center gap-4 text-xs sm:text-base">
               <span className="flex items-center gap-2">
-                <Clock size={18} /> 24/7 Service
+                <Clock size={18} /> Available 24/7
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
-                <Quote size={18} /> Free Quotes
+                <Quote size={18} /> Instant Quotes
               </span>
               <span>|</span>
               <span className="flex items-center gap-2">
                 <CircleDollarSign size={18} />
-                Money-Back Guarantee
+                Satisfaction Guaranteed
               </span>
             </div>
           </div>

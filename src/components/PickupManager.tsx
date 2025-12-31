@@ -33,13 +33,11 @@ export default function PickupManager() {
             id="manager-heading"
             className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4"
           >
-            Direct Support, Personalized Service. <br className="hidden sm:block" />
-            <span className="text-green-600">Your Dedicated Laundry Partner.</span>
+            Personalized Support from a Dedicated Partner. <br className="hidden sm:block" />
+            <span className="text-green-600">Your Go-To for Laundry in Makkah.</span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Experience hassle-free laundry with a direct point of contact. Our
-            dedicated team understands your needs and ensures a seamless
-            experience from pickup to delivery.
+            Enjoy a seamless laundry experience with personalized service. Our dedicated manager is your direct contact, ensuring your needs are met from start to finish.
           </p>
         </div>
 

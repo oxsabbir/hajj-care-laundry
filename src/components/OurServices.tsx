@@ -2,7 +2,7 @@ import ServiceCard from "./ServiceCard";
 const urgentServices = [
   {
     title: "Press / Ironing / Folding",
-    price: "13 Riyals",
+    price: "12 Riyals",
     unit: "Kg",
     description:
       "Professional pressing, ironing, and folding service with delivery within 5 hours or as per client’s request.",
@@ -38,7 +38,7 @@ const urgentServices = [
   },
   {
     title: "Premium Ihram Care",
-    price: "25 Riyals",
+    price: "20 Riyals",
     unit: "Kg",
     description:
       "Specialized washing and care for Ihram garments using gentle processes to maintain purity and fabric quality.",
@@ -65,19 +65,17 @@ export default function OurServices() {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Our Laundry Services in Makkah
+            Comprehensive Laundry Services in Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            We provide reliable laundry services across Makkah, Wherever you are
-            in Makkah
+            We offer a wide range of reliable laundry services throughout Makkah.
             <br />
             <span className="">
-              With Our quick{" "}
+              With our fast{" "}
               <strong className="text-primary font-semibold">
                 pickup and delivery
               </strong>{" "}
-              for hotels, apartments, and areas near the Haram—making laundry
-              easy and stress-free for you.
+              for hotels, apartments, and areas near the Haram—making your laundry experience hassle-free.
             </span>
           </p>
         </div>

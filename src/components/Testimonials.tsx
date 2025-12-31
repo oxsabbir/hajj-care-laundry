@@ -81,7 +81,7 @@ const testimonials = [
     rating: 5,
     service: "Ihram Cleaning",
     review:
-      "During my Umrah, Zamzam Insaf Laundry was a lifesaver! Their prompt service and attention to detail for my Ihram clothes were exceptional. Truly a 5-star experience.",
+      "During my Umrah, Hajj Care Laundry was a lifesaver! Their prompt service and attention to detail for my Ihram clothes were exceptional. Truly a 5-star experience.",
     avatar: "OF",
     flag: "🇬🇧",
   },
@@ -92,7 +92,7 @@ const testimonials = [
     rating: 5,
     service: "Abaya Cleaning",
     review:
-      "I was so impressed with Zamzam Insaf Laundry's efficiency. They picked up my abayas and returned them perfectly clean and pressed, allowing me to focus completely on my worship. Highly recommend their services to all pilgrims.",
+      "I was so impressed with Hajj Care Laundry's efficiency. They picked up my abayas and returned them perfectly clean and pressed, allowing me to focus completely on my worship. Highly recommend their services to all pilgrims.",
     avatar: "HB",
     flag: "🇯🇴",
   },
@@ -103,7 +103,7 @@ const testimonials = [
     rating: 5,
     service: "Regular Customer",
     review:
-      "As a frequent visitor for Hajj and Umrah, I've tried many laundry services. Zamzam Insaf Laundry stands out for its quality and reliability. Their 24/7 service is a blessing. Will definitely use them again!",
+      "As a frequent visitor for Hajj and Umrah, I've tried many laundry services. Hajj Care Laundry stands out for its quality and reliability. Their 24/7 service is a blessing. Will definitely use them again!",
     avatar: "FR",
     flag: "🇧🇩",
   },
@@ -133,7 +133,7 @@ const Testimonials = () => {
             }
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            What Our Customers Say
+            Words from Our Valued Customers
           </motion.h2>
           <motion.p
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
@@ -141,7 +141,7 @@ const Testimonials = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            5000+ happy customers from 50+ countries trust us with their laundry
+            7500+ happy pilgrims from over 50 countries have trusted us with their laundry needs.
           </motion.p>
           <motion.div
             className="flex items-center justify-center gap-2 mt-4"
@@ -157,7 +157,7 @@ const Testimonials = () => {
               ))}
             </div>
             <span className="text-xl font-bold text-foreground">4.9/5</span>
-            <span className="text-muted-foreground">(5000+ reviews)</span>
+            <span className="text-muted-foreground">(7500+ reviews)</span>
           </motion.div>
         </motion.div>
 

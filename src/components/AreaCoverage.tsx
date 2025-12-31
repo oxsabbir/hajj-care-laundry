@@ -82,12 +82,10 @@ const AreaCoverage = () => {
             id="areas-heading"
             className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-foreground"
           >
-            Extensive Laundry Coverage Across Makkah
+            Complete Laundry Coverage Throughout Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            From bustling hotel zones to residential areas, our express pickup
-            service reaches every corner of Makkah, ensuring fresh laundry
-            wherever you are.
+            Whether you're in a bustling hotel or a quiet neighborhood, our express laundry pickup service covers all of Makkah, bringing convenience right to your doorstep.
           </p>
         </div>
 

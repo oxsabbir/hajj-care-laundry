@@ -21,14 +21,13 @@ export default function FinalCTA() {
       <div className="relative container mx-auto px-3 sm:px-4">
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 sm:mb-6">
-            Ready for the Best Laundry Experience in Makkah?
+            Ready for the Most Convenient Laundry Service in Makkah?
           </h2>
           <p className="text-base sm:text-xl text-primary-foreground/95 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
-            Join 5000+ satisfied customers who chose the fastest, cheapest, and
-            most reliable laundry service in Makkah.
+            Join over 7500 satisfied pilgrims who rely on the fastest and most trustworthy laundry service in Makkah.
             <span className="text-accent font-bold">
               {" "}
-              Your clean clothes are just 15 minutes away!
+              Your fresh garments are just a 15-minute pickup away!
             </span>
           </p>
         </div>
@@ -201,7 +200,7 @@ export default function FinalCTA() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
               <div className="bg-primary-foreground/10 rounded-lg p-2 sm:p-3">
                 <div className="text-lg sm:text-xl font-bold text-accent">
-                  5000+
+                  7500+
                 </div>
                 <div className="text-xs text-white sm:text-sm">
                   Satisfied Customers

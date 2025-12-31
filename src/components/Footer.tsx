@@ -91,7 +91,7 @@ const Footer = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="w-full h-full opacity-80 group-hover:opacity-100 border-0 transition-opacity"
-          title="Clock Tower Laundry Location"
+          title="Hajj Care Laundry Location"
         />
       </div>
 
@@ -108,13 +108,12 @@ const Footer = () => {
                 {/* Ensure logo works on dark bg, or use a white version */}
                 <img
                   src={brandLogo}
-                  alt="Zamzam laundry logo"
+                  alt="Hajj Care Laundry logo"
                   className="w-full h-auto "
                 />
               </div>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                The most trusted laundry service in Makkah. specialized in
-                caring for Pilgrim garments with speed, purity, and precision.
+                Hajj Care Laundry is the most trusted laundry service in Makkah, specializing in the care of Pilgrim garments with speed, purity, and precision.
               </p>
 
               <div className="flex gap-3">
@@ -304,7 +303,7 @@ const Footer = () => {
       <div className="bg-slate-800 border-t border-slate-900 py-8">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-300 text-sm">
-            © {currentYear} Makkah Laudry Service. All rights reserved.
+            © {currentYear} Hajj Care Laundry. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm font-medium">
             <a

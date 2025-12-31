@@ -6,7 +6,7 @@ import { handleWhatsApp } from "@/lib/utils";
 const pricePlan = {
   basic: {
     title: "Basic",
-    price: 13,
+    price: 12,
     feature: [
       "Regular clothes wash & dry",
       "FREE pickup & delivery",
@@ -55,10 +55,10 @@ export default function PricingSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Choose Your Perfect Plan
+            Select the Perfect Plan for Your Needs
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Affordable, transparent pricing for every need.
+            Transparent and affordable pricing to suit every pilgrim's needs.
           </p>
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8 max-w-5xl mx-auto">

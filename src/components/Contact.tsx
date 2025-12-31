@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { managerInfo } from "@/constants";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -41,7 +42,7 @@ const Contact = () => {
     const message = encodeURIComponent(
       "Hi, I'd like to book a laundry service."
     );
-    window.open(`https://wa.me/1234567890?text=${message}`, "_blank");
+    window.open(`https://wa.me/${managerInfo.onlyNumber.whatsApp}?text=${message}`, "_blank");
   };
 
   return (
@@ -49,10 +50,10 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Get In Touch
+            Contact Us
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to experience professional laundry care? Contact us today!
+            Have questions or ready to book? We're here to help!
           </p>
         </div>
 
@@ -72,10 +73,10 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-foreground">Phone</p>
                       <a
-                        href="tel:+1234567890"
+                        href={`tel:${managerInfo.phoneNumber}`}
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +1 (234) 567-890
+                        {managerInfo.phoneNumber}
                       </a>
                     </div>
                   </div>
@@ -87,10 +88,10 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-foreground">Email</p>
                       <a
-                        href="mailto:info@makkahlaundrycare.com"
+                        href={`mailto:${managerInfo.email}`}
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        info@makkahlaundrycare.com
+                        {managerInfo.email}
                       </a>
                     </div>
                   </div>
@@ -102,9 +103,7 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-foreground">Address</p>
                       <p className="text-muted-foreground">
-                        123 Main Street
-                        <br />
-                        Makkah, Saudi Arabia
+                        {managerInfo.address}
                       </p>
                     </div>
                   </div>
@@ -121,7 +120,7 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Makkah Laundry Care Location"
+                  title="Hajj Care Laundry Location"
                 />
               </div>
             </div>
@@ -182,7 +181,7 @@ const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })
                   }
-                  placeholder="+1 (234) 567-890"
+                  placeholder={managerInfo.phoneNumber}
                 />
               </div>
 

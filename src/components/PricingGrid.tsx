@@ -14,7 +14,7 @@ const pricingItems = [
     emoji: "👕",
     title: "Regular Clothes",
     subtitle: "Shirts, pants, casual wear",
-    price: "13 SAR/kg",
+    price: "12 SAR/kg",
     time: "Same day",
   },
   {
@@ -28,7 +28,7 @@ const pricingItems = [
     emoji: "🕋",
     title: "Ihram Clothes",
     subtitle: "Special care for holy garments",
-    price: "15 SAR/piece",
+    price: "14 SAR/piece",
     time: "3 hours",
   },
   {
@@ -67,9 +67,10 @@ const PricingGrid = () => {
     <section className="py-20 bg-muted/60">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 sm:mb-12">
-                                  <h2 id="services-heading" className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">Zamzam Insaf Laundry: Transparent Pricing</h2>          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Clear, competitive pricing for all your laundry needs in Makkah. Quality service starts from{" "}
-            <span className="text-primary ml-1 font-semibold">13 SAR/kg!</span>
+                                  <h2 id="services-heading" className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">Hajj Care Laundry: Clear & Affordable Pricing</h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+            Fair and transparent pricing for all our laundry services in Makkah. High-quality care starts from just{" "}
+            <span className="text-primary ml-1 font-semibold">12 SAR/kg!</span>
           </p>
         </div>
 

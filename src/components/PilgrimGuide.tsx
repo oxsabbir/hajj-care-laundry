@@ -63,7 +63,7 @@ const guideItems = [
     content:
       "Our transparent pricing helps you budget effectively. Hotel laundry can be 3x more expensive, so plan ahead to save.",
     tips: [
-      "Expect to pay around 13-18 SAR per kg.",
+      "Expect to pay around 12-18 SAR per kg.",
       "An average 3-5 kg load costs about 45-75 SAR.",
       "Avoid expensive hotel services to save up to 70%.",
     ],
@@ -93,11 +93,10 @@ export default function PilgrimGuide() {
             id="guide-heading"
             className="text-3xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            A Pilgrim's Guide to Hassle-Free Laundry
+            Essential Laundry Guide for Pilgrims
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Focus on your spiritual journey. We'll take care of the laundry with
-            these essential tips for Hajj & Umrah.
+            Let us handle the laundry, so you can focus on your spiritual journey. Here are some essential tips for Hajj & Umrah.
           </p>
         </header>
 

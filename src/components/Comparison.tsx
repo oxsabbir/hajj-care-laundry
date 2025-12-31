@@ -1,35 +1,44 @@
-import { Award, Check, Clock, DollarSign, Shield, Users, X, Zap } from "lucide-react";
+import {
+  Award,
+  Check,
+  Clock,
+  DollarSign,
+  Shield,
+  Users,
+  X,
+  Zap,
+} from "lucide-react";
 
 const comparisonData = [
   {
     feature: "Pickup Time",
-    us: "15 Minutes",
-    others: "2-4 Hours",
+    us: "In as little as 15 Minutes",
+    others: "Typically 2-4 Hours",
   },
   {
     feature: "Operating Hours",
-    us: "Around the Clock (24/7)",
-    others: "Limited Hours",
+    us: "24/7 (Always Open)",
+    others: "Standard Business Hours",
   },
   {
     feature: "Starting Price",
-    us: "From 12 SAR/kg",
-    others: "From 25 SAR/kg",
+    us: "From 12 SAR/kg (Hotel prices are typically 25 SAR/kg)",
+    others: "Often Higher (e.g., 25 SAR/kg at hotels)",
   },
   {
     feature: "Customer Support",
-    us: "Multi-language (En, Ar, Ur)",
-    others: "Primarily Arabic",
+    us: "Multi-language (English, Arabic, Urdu)",
+    others: "Limited Language Options",
   },
   {
     feature: "Delivery Charge",
-    us: "Always Free",
-    others: "Often Extra",
+    us: "Always FREE",
+    others: "Additional Charges Apply",
   },
   {
     feature: "Urgent Orders",
-    us: "Ready in 1 Hour",
-    others: "24-Hour Minimum",
+    us: "Fresh & Ready in 1 Hour",
+    others: "24-Hour Minimum Wait",
   },
 ];
 
@@ -42,21 +51,21 @@ const Comparison = () => {
             id="benefits-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            The ZamZam Insaf Difference: A Clear Choice
+            The Hajj Care Laundry Difference: A Clear Choice
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            See how our service excels against standard Makkah laundry options,
-            providing unmatched value for pilgrims near Haram.
+            Discover why Hajj Care Laundry stands out from other services in
+            Makkah, offering unparalleled convenience and value for pilgrims.
           </p>
         </header>
         <div className="bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-8 sm:mb-12 max-w-6xl mx-auto">
           <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white">
-            ZamZam Insaf vs. The Rest
+            Hajj Care Laundry vs. Other Services
           </h3>
           <div className="space-y-4">
             <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center font-bold text-sm sm:text-base text-slate-300">
               <div>Feature</div>
-              <div>ZamZam Insaf</div>
+              <div>Hajj Care Laundry</div>
               <div>Other Services</div>
             </div>
             {comparisonData.map((item, i) => (
@@ -86,11 +95,11 @@ const Comparison = () => {
                 <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-accent" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Unmatched Speed
+                Rapid Pickup & Delivery
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Guaranteed 15-minute pickup. We operate on your schedule, not
-                ours. Ideal for time-sensitive needs.
+                Guaranteed pickup in just 15 minutes, ensuring your laundry is
+                handled with unmatched speed and efficiency.
               </p>
             </div>
           </div>
@@ -100,11 +109,11 @@ const Comparison = () => {
                 <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-green-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Affordable Excellence
+                Economical & Transparent
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Transparent pricing from 12 SAR/kg and completely free
-                pickup/delivery, offering savings up to 50% over hotels.
+                Start from 12 SAR/kg with free pickup and delivery. Save
+                significantly compared to hotel laundry services.
               </p>
             </div>
           </div>
@@ -114,11 +123,11 @@ const Comparison = () => {
                 <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Always Open
+                24/7 Availability
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Laundry emergencies don't wait. That's why we're here for you
-                24/7, even at 3 AM.
+                We're here whenever you need us, day or night, ensuring your
+                laundry needs are met around the clock.
               </p>
             </div>
           </div>
@@ -128,11 +137,11 @@ const Comparison = () => {
                 <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-blue-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Total Peace of Mind
+                Secure & Reliable Service
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                With digital tracking and professional handling, your garments
-                are secure. Backed by our money-back guarantee.
+                Your garments are safe with us, handled by professionals and
+                backed by our commitment to quality and money-back guarantee.
               </p>
             </div>
           </div>
@@ -142,11 +151,11 @@ const Comparison = () => {
                 <Users className="w-8 h-8 sm:w-10 sm:h-10 text-purple-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                We Speak Your Language
+                Multilingual Support
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Our team is fluent in English, Arabic, and Urdu to ensure clear
-                and easy communication.
+                Our dedicated team offers support in English, Arabic, and Urdu
+                for seamless communication and service.
               </p>
             </div>
           </div>
@@ -156,11 +165,11 @@ const Comparison = () => {
                 <Award className="w-8 h-8 sm:w-10 sm:h-10 text-orange-500" />
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2 text-foreground">
-                Proven & Trusted
+                Highly Rated by Pilgrims
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Serving over 7,500 pilgrims from 50+ countries. Our 4.9-star
-                rating speaks for itself.
+                Trusted by over 7,500 pilgrims from 50+ countries with a stellar
+                4.9-star rating.
               </p>
             </div>
           </div>

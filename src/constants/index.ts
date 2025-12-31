@@ -1,12 +1,12 @@
 export const managerInfo = {
-  fullName: "Mohammad Rakibul Hossain",
-  phoneNumber: "+966 50 863 5924",
-  whatsApp: "+966 50 863 5924",
+  fullName: "Foysal Mahmud",
+  phoneNumber: "+966 50 136 2135",
+  whatsApp: "+966 50 136 2135",
   onlyNumber: {
-    whatsApp: 966508635924,
-    phoneNumber: 966508635924,
+    whatsApp: 966501362135,
+    phoneNumber: 966501362135,
   },
   address: `Ajyad St, Ajyad District, Makkah 24231, Saudi Arabia
 `,
-  email: "info@zamzaminsaflaundry.com",
+  email: "info@hajjcarelaundry.com",
 };

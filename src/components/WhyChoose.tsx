@@ -4,32 +4,32 @@ const reasons = [
   {
     icon: Zap,
     title: "Lightning Fast Service",
-    description: "15-minute pickup guarantee. Others take hours - we take minutes. Perfect for urgent situations.",
+    description: "15-minute pickup guarantee. We're on our way when you need us, not hours later.",
   },
   {
     icon: DollarSign,
     title: "Best Prices in Makkah",
-    description: "Starting at just 13 SAR/kg with FREE pickup/delivery. Save up to 50% compared to hotel laundry.",
+    description: "From just 12 SAR/kg with FREE pickup & delivery. Save up to 50% compared to hotel prices.",
   },
   {
     icon: Clock,
     title: "24/7 Availability",
-    description: "Need laundry at 3 AM? No problem! We're the only service in Makkah available round the clock.",
+    description: "Laundry needs can arise anytime. We're the only 24/7 service in Makkah, ready for you day or night.",
   },
   {
     icon: Shield,
     title: "100% Safe & Secure",
-    description: "Your clothes are tracked, insured, and handled by professional staff. Money-back guarantee.",
+    description: "Your garments are tracked, insured, and handled with care by our professional team. Satisfaction guaranteed.",
   },
   {
     icon: Languages,
     title: "Multilingual Support",
-    description: "Speak Arabic, English, or Urdu? Our team communicates in your preferred language.",
+    description: "Our team is fluent in Arabic, English, and Urdu, ensuring clear communication.",
   },
   {
     icon: Users,
-    title: "5000+ Happy Customers",
-    description: "Trusted by pilgrims from 50+ countries. 4.9/5 star rating with verified reviews.",
+    title: "7500+ Happy Pilgrims",
+    description: "Trusted by over 7,500 pilgrims from 50+ countries. Our 4.9-star rating speaks for itself.",
   },
 ];
 
@@ -39,10 +39,10 @@ const WhyChoose = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Why Choose Makkah Laundry Care?
+            Why Choose Hajj Care Laundry?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Experience the difference with professional service trusted by thousands
+            Discover the advantages of our dedicated laundry service for pilgrims.
           </p>
         </div>
 

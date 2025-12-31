@@ -22,11 +22,10 @@ export default function UrgentService() {
             id="emergency-times-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            Require Fresh Clothes, Fast? We Deliver!
+            Need Fresh Clothes in a Hurry? We've Got You Covered!
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            24/7 emergency, express, and same-day laundry solutions right by
-            Haram.
+            Our 24/7 express and same-day laundry services are designed for your convenience, right next to the Haram.
           </p>
         </header>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">

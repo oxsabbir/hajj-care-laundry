@@ -22,16 +22,14 @@ export default function EmergencyService() {
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-              Laundry Emergency? <br className="hidden sm:block" />
+              Urgent Laundry Needs? <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-500">
-                We're On The Way.
+                We'll Be Right There.
               </span>
             </h2>
 
             <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              Don't panic. Whether it's a spill before a meeting or a flight
-              tomorrow morning, our <strong>Rapid Response Team</strong> handles
-              your garments with speed and precision.
+              No need to worry. Whether it's a last-minute spill or an early flight, our <strong>Rapid Response Team</strong> is ready to handle your laundry with speed and care.
             </p>
           </div>
 

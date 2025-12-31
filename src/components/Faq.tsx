@@ -8,11 +8,10 @@ export default function Faq() {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-foreground">
-            Frequently Asked Questions
+            Your Questions Answered
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Got questions? We've got answers! Here are the most common questions
-            from our customers.
+            Here are answers to some of the most common questions we receive from pilgrims.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
@@ -58,8 +57,7 @@ export default function Faq() {
                 Q: What are your prices for thobes and abayas?
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                A: We have special prices for traditional wear. Thobes are SAR
-                15 and abayas are SAR 20, including steam pressing.
+                A: We offer special care for traditional wear. Thobes are 15 SAR per piece and abayas are 20 SAR per piece, including professional steam pressing.
               </p>
             </div>
             <div className="rounded-lg bg-card text-card-foreground shadow-md p-4 sm:p-6 hover:shadow-lg transition-all border border-primary/10 transform hover:-translate-y-1">

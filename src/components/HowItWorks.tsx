@@ -49,13 +49,13 @@ const HowItWorks = () => {
             id="services-heading"
             className="text-2xl sm:text-4xl font-bold mb-4 text-foreground"
           >
-            How Zamzam Insaf Laundry Works
+            How Hajj Care Laundry Works
           </h2>
           <p className="text-base sm:text-xl font-medium mb-1 text-muted-foreground max-w-3xl mx-auto">
-            Experience hassle-free laundry in Makkah.
+            Your simple three-step process for fresh laundry in Makkah.
             <br />
             <span className="text-primary  mt-2">
-              Fresh, clean clothes, delivered quickly.
+              Fast, reliable, and convenient service.
             </span>
           </p>
         </div>
