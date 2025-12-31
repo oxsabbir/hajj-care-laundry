@@ -61,6 +61,16 @@ const areas = [
       { name: "Al Rusaifah & Al Awali", time: "20-30 min" },
     ],
   },
+  {
+    emoji: "🏙️",
+    title: "Al-Shubaikah & City Center",
+    description:
+      "Covering key urban and commercial districts with swift laundry services, tailored for both residents and visitors.",
+    locations: [
+      { name: "Al-Shubaikah District", time: "10-20 min" },
+      { name: "Makkah City Center", time: "15-25 min" },
+    ],
+  },
 ];
 
 const AreaCoverage = () => {
@@ -85,7 +95,9 @@ const AreaCoverage = () => {
             Complete Laundry Coverage Throughout Makkah
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8">
-            Whether you're in a bustling hotel or a quiet neighborhood, our express laundry pickup service covers all of Makkah, bringing convenience right to your doorstep.
+            Whether you're in a bustling hotel or a quiet neighborhood, our
+            express laundry pickup service covers all of Makkah, bringing
+            convenience right to your doorstep.
           </p>
         </div>
 
@@ -138,9 +150,9 @@ const AreaCoverage = () => {
             </div>
           ))}
         </div>
-        <div className="rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-xl border-2 border-primary/50 bg-gradient-to-r from-primary/5 to-accent/5">
+        <div className="relative z-10 rounded-lg bg-card text-card-foreground max-w-2xl mx-auto shadow-xl border border-green-200 dark:border-gray-700 bg-gradient-to-br from-green-50 to-green-100/50 dark:from-gray-800 dark:to-gray-900">
           <div className="p-4 py-6 sm:p-6 text-center">
-            <h3 className="text-lg md:text-xl font-bold mb-5 text-primary">
+            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
               Unsure About Your Location? Get Instant Pickup Confirmation!
             </h3>
             <div className="space-y-4 ">
@@ -149,12 +161,12 @@ const AreaCoverage = () => {
                 type="text"
                 minLength={1}
                 onChange={(e) => setLocation(e.target.value)}
-                className="flex w-full border-input bg-background px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm h-12 sm:h-14 text-base border-2 focus:border-accent rounded-xl"
+                className="flex h-12 w-full rounded-lg border text-lg p-6 my-2 border-gray-300 bg-white  text-gray-900 placeholder:text-gray-500 focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-all duration-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder:text-gray-400 dark:focus:border-green-400"
                 placeholder="Enter your hotel/location name"
               />
               <button
                 onClick={handleCheckArea}
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none  bg-green-500 text-white hover:bg-green-600 shadow-primary px-4 py-2 w-full h-12 sm:h-14 text-base sm:text-lg font-bold rounded-xl"
+                className="w-full bg-success text-white text-lg font-bold py-3 px-6 rounded-xl shadow-lg shadow-green-500/20 transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-2 group"
               >
                 <WhatsAppIcon size={24} />
                 Check My Pickup Time - FREE

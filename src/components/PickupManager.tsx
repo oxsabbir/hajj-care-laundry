@@ -33,11 +33,16 @@ export default function PickupManager() {
             id="manager-heading"
             className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4"
           >
-            Personalized Support from a Dedicated Partner. <br className="hidden sm:block" />
-            <span className="text-green-600">Your Go-To for Laundry in Makkah.</span>
+            Personalized Support from a Dedicated Partner.{" "}
+            <br className="hidden sm:block" />
+            <span className="text-green-600">
+              Your Go-To for Laundry in Makkah.
+            </span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Enjoy a seamless laundry experience with personalized service. Our dedicated manager is your direct contact, ensuring your needs are met from start to finish.
+            Enjoy a seamless laundry experience with personalized service. Our
+            dedicated manager is your direct contact, ensuring your needs are
+            met from start to finish.
           </p>
         </div>
 
@@ -134,7 +139,7 @@ export default function PickupManager() {
                       Ahmed F.
                     </div>
                     <div className="text-xs text-slate-400">
-                      • Pilgrim from Malaysia
+                      • Pilgrim from Saudi
                     </div>
                   </div>
                 </div>

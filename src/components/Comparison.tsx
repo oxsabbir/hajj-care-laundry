@@ -77,11 +77,9 @@ const Comparison = () => {
                   {item.feature}
                 </div>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-green-400 font-bold text-xs sm:text-sm">
-                  <Check size={16} className="shrink-0" />
                   <span>{item.us}</span>
                 </div>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-red-400 font-semibold text-xs sm:text-sm">
-                  <X size={16} className="shrink-0" />
                   <span>{item.others}</span>
                 </div>
               </div>
