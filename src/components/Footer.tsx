@@ -17,7 +17,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import WhatsAppIcon from "./icons/Whatsapp";
 import { motion } from "motion/react"; // Ensure this matches your installed package (framer-motion vs motion)
-import brandLogo from "@/assets/logo_zam_zam.webp"; // Ensure you have a version that looks good on dark bg, or use filter invert
+import brandLogo from "@/assets/hajj_care_logo_dark.webp"; // Ensure you have a version that looks good on dark bg, or use filter invert
 import { managerInfo } from "@/constants";
 // import SnapChatIcon from "./icons/SnapChat";
 
@@ -113,7 +113,9 @@ const Footer = () => {
                 />
               </div>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                Hajj Care Laundry is the most trusted laundry service in Makkah, specializing in the care of Pilgrim garments with speed, purity, and precision.
+                Hajj Care Laundry is the most trusted laundry service in Makkah,
+                specializing in the care of Pilgrim garments with speed, purity,
+                and precision.
               </p>
 
               <div className="flex gap-3">

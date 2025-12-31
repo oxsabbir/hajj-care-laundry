@@ -2,11 +2,9 @@ import Navigation from "@/components/Navigation";
 import HeroNew from "@/components/HeroNew";
 import AreaCoverage from "@/components/AreaCoverage";
 import Comparison from "@/components/Comparison";
-import WhyChoose from "@/components/WhyChoose";
 import PricingGrid from "@/components/PricingGrid";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import PickupManager from "@/components/PickupManager";
 import UrgentService from "@/components/UrgentService";
@@ -15,7 +13,6 @@ import FinalCTO from "@/components/FinalCTA";
 import PilgrimGuide from "@/components/PilgrimGuide";
 import Faq from "@/components/Faq";
 import EmergencyService from "@/components/EmergencyService";
-import FloatingCTA from "@/components/FloatingCTA";
 import OurServices from "@/components/OurServices";
 
 const Index = () => {
