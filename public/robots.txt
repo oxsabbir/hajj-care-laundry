@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://zamzaminsaflaundry.com/sitemap.xml
+Sitemap: https://hajjcarelaundry.com/sitemap.xml

@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { motion } from "motion/react";
 import { Users, Heart, Leaf, Clock, Award, Target } from "lucide-react";
-import aboutServiceImage from "@/assets/about_zam.webp";
+import aboutServiceImage from "@/assets/about.webp";
 import { managerInfo } from "@/constants";
 
 const About = () => {
@@ -23,7 +23,8 @@ const About = () => {
               About Hajj Care Laundry
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Dedicated to providing exceptional laundry services for pilgrims and residents in Makkah.
+              Dedicated to providing exceptional laundry services for pilgrims
+              and residents in Makkah.
             </p>
           </motion.div>
         </div>
@@ -55,13 +56,22 @@ const About = () => {
                 Who We Are
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Hajj Care Laundry is a trusted provider of pickup and delivery laundry services, dedicated to serving pilgrims, residents, and visitors throughout the holy city of Makkah with the utmost care and professionalism.
+                Hajj Care Laundry is a trusted provider of pickup and delivery
+                laundry services, dedicated to serving pilgrims, residents, and
+                visitors throughout the holy city of Makkah with the utmost care
+                and professionalism.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Located near the central areas of Makkah and Masjid al-Haram, we have a deep understanding of the unique schedules and needs of Umrah and Hajj pilgrims, as well as the daily requirements of local residents. Our services are designed to be flexible and convenient, fitting seamlessly into your busy schedule.
+                Located near the central areas of Makkah and Masjid al-Haram, we
+                have a deep understanding of the unique schedules and needs of
+                Umrah and Hajj pilgrims, as well as the daily requirements of
+                local residents. Our services are designed to be flexible and
+                convenient, fitting seamlessly into your busy schedule.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                With our 15-minute express pickup, 24/7 availability, and expert garment care, we handle your laundry needs so you can focus on what matters most during your time in Makkah.
+                With our 15-minute express pickup, 24/7 availability, and expert
+                garment care, we handle your laundry needs so you can focus on
+                what matters most during your time in Makkah.
               </p>
             </motion.div>
           </div>
@@ -82,7 +92,9 @@ const About = () => {
               Our Mission
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To provide exceptional laundry care that respects your time, your garments, and the environment — allowing you to focus on what truly matters during your time in Makkah.
+              To provide exceptional laundry care that respects your time, your
+              garments, and the environment — allowing you to focus on what
+              truly matters during your time in Makkah.
             </p>
           </motion.div>
 
